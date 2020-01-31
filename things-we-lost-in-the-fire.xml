@@ -48,25 +48,21 @@
             <!--Religious about a programming language-->
             <para dir="ltr">Being too religious about a programming language or a vocabulary does
                 not always help a project.</para>
-            <para dir="ltr">Some years ago I presented a workshop after the audit of a XML
-                transformation code base. </para>
-            <para dir="ltr">I was invited to do so because the customer found out that very small
-                functional changes to the existing proprietary transformer really took developers a
-                lot of time to develop and </para>
-            <para dir="ltr">testing always revealed that a small fix at one point raised another
-                issue elsewhere.</para>
+            <para dir="ltr">Some years ago I held a workshop after the audit of an XML
+                transformation code base. I was invited to do so because the customer found out that
+                very small functional changes to the existing proprietary transformer really took
+                developers a lot of time to develop and testing always revealed that a small fix at
+                one point raised another issue elsewhere.</para>
             <para dir="ltr">It was obvious they were using the wrong technology for the job at
                 hand.</para>
             <para dir="ltr">I managed to convince the managers in the workshop that a different
-                technology (XSLT to no surprise) would pay off really soon,</para>
-            <para dir="ltr">as it would be a much better fit to the job.</para>
-            <para dir="ltr">After a coffee break we would discuss migration plans,
+                technology (XSLT to no surprise) would pay off quickly, as it would be a much better
+                fit to the job. After a coffee break we would discuss migration plans,
                 training...</para>
             <para dir="ltr">None of the developers present realised I understood the local language,
-                so near the coffee machine I overheard an agitated discussion about the
-                techology.</para>
-            <para dir="ltr">One of the developers mentioned firmly that XSLT would only be used
-                "over his dead body"</para>
+                so near the coffee machine I overheard an agitated discussion about the techology.
+                One of the developers mentioned firmly that XSLT would only be used "<quote>over his
+                    dead body</quote>"</para>
             <para dir="ltr">I was assured by the manager that they would handle the situation
                 without much problems and we planned migration, training, contracts.</para>
             <para dir="ltr">After my flight back home, there was a message on my voicemail thanking
@@ -144,7 +140,8 @@
         <section>
             <title>The Strict DTD, Part 2</title>
             <!--(Comment about Strict DTDs (more powerful than you think)-->
-            <para/>
+            <para>The whole Strict DTD debacle was as much about misconceptions as it was about
+                religion. TBA</para>
         </section>
         <section>
             <title>We've Always Done This</title>
@@ -202,37 +199,36 @@
             <title>90-minute Standups</title>
             <!--90 minute standups-->
             <para dir="ltr">In the early days of using agile development methods, I worked half time
-                for a somewhat smaller integrator.</para>
-            <para dir="ltr">One big project consumed most of the company resources and also charged
-                some of the work out to consultants such as myself.</para>
+                for a somewhat smaller integrator. A single big project consumed most of the
+                company's resources and also charged some of the work out to consultants such as
+                myself.</para>
             <para dir="ltr">In order to glue all of teams efforts together we had a daily standup
-                meeting with about 45 people.</para>
-            <para dir="ltr">The daily standup took an hour, sometimes up to 90 minutes. Working only
-                halftime in the project, I was still attending the standup every day.</para>
+                meeting with about 45 people. The daily standup took an hour, sometimes up to 90
+                minutes. Working only halftime in the project, I was still attending the standup
+                every day.</para>
             <para dir="ltr">Well, I got dismissed from the standup after I started mentioning the
                 daily meeting explicitly in my timesheets.</para>
-            <para dir="ltr">Anyhow. At some point the end-customer cancelled the project for
-                budgetary reasons.</para>
+            <para dir="ltr">In the end, the end-customer cancelled the project for budgetary
+                reasons.</para>
         </section>
         <section>
             <title>The Build Is Green</title>
             <!--Test driven dev and green builds-->
-            <para dir="ltr">Talking about agile development. In a project I worked in there where
-                some trained "scrum masters" doing the Java development part of the work.</para>
-            <para dir="ltr">They were extremely keen on using all the techniques they learned in the
-                project: peer programming but mainly Test Driven Development.</para>
+            <para dir="ltr">Speaking of agile development, in a project I once worked in there were
+                some trained <quote>scrum masters</quote> doing the Java development part of the
+                work. They were extremely keen on using all the techniques they learned in the
+                project: pair programming but mainly Test Driven Development.</para>
             <para dir="ltr">After setting up a test environment and a big screen, their only focus
-                to the project became "making the build green".</para>
+                to the project became <quote>making the build green</quote>.</para>
             <para dir="ltr">At some point we had a couple of rough days in the project, and "the
-                build" had been red for days. </para>
-            <para dir="ltr">Suddenly the scrum masters started singing "the build is green, the
-                build is green" and prepared to leave for the evening.</para>
-            <para dir="ltr">Well it had never been as bad as on that particular point. Everything
-                broke apart, no results to be found anywhere.</para>
-            <para dir="ltr">Pointing that out the response was: "You can not spoil the fun, the
-                build is green".</para>
+                build" had been red for days. Suddenly the scrum masters started singing <quote>the
+                    build is green, the build is green</quote> and prepared to leave for the
+                evening. Well it had never been as bad as on that particular point. Everything broke
+                apart, no results to be found anywhere.</para>
+            <para dir="ltr">Pointing that out the response was: <quote>You can not spoil the fun,
+                    the build is green</quote>.</para>
             <para dir="ltr">They left the office with a suggestion... if there is something you
-                don't like, you will have to write a test for that</para>
+                don't like, you will have to write a test for that.</para>
         </section>
         <section>
             <title>Make It Better</title>
@@ -298,7 +294,7 @@
                 everything is about office politics.</para>
         </section>
         <section>
-            <title>Strict DTD, Part 2</title>
+            <title>Strict DTD, Part 3</title>
             <!--Comment about what the Strict DTD led to (a black box that translated between an authoring DTD and a production DTD for no good reason)-->
             <para/>
         </section>
@@ -525,6 +521,55 @@
     <section>
         <title>Wisdom</title>
         <!--This is sort of like conclusions-->
-        <para>Here's where we impart wisdom</para>
+        <para dir="ltr">Drink a lot of coffee... or beer. Seriously, companies do have organigrams
+            and official guidelines.</para>
+        <para dir="ltr">But it is the unwritten rules and personal connections that tell you so much
+            more.</para>
+        <para dir="ltr">You gain valuable knowledge and would grasp the political sensitivities by
+            listening to coworkers in an informal context.</para>
+        <para dir="ltr">Don't ever engage in religious discussions. When "forces" at your customer
+            are convinced that their technology is the one to use, use it.</para>
+        <para dir="ltr">You can bring all the arguments you want at the table. Objective criteria
+            won't be sufficient to convert the religious inspired.</para>
+        <para dir="ltr">Choose your battles well, even if you risk frustration over your
+            work.</para>
+        <para dir="ltr">But do engage in discussions about licenses. Too many companies have an open
+            source software policy because they think it is a different word for "free
+            software".</para>
+        <para dir="ltr">Valuable time is lost in projects working around restrictions of basic
+            freeware. For a small fee one can often buy a lot of robustness, functionality,
+            performance ...</para>
+        <para dir="ltr">and someone has to develop and maintain the tools you use. One should always
+            consider the long term validity of what you build and bring.</para>
+        <para dir="ltr">For the longer benefit of your customer, this is a battle worth
+            fighting</para>
+        <para dir="ltr">Don't bargain on your price. Failure is inherent if you bridge a large gap
+            in price discussions.</para>
+        <para dir="ltr">You sell value, not hours. If the customer estimates your value lower than
+            you do yourself,</para>
+        <para dir="ltr">you are about to be hired for the wrong job. No matter how friendly you
+            agree a price...</para>
+        <para dir="ltr">they will think they are paying you too much for what you do,</para>
+        <para dir="ltr">you will be frustrated because you firmly believe they make you do things
+            they are paying you for.</para>
+        <para dir="ltr">Get your responsibilities straight from the start.</para>
+        <para dir="ltr">Customers often don't realize what exactly they are hiring you for.</para>
+        <para dir="ltr">A quick development task at a fair price, will most likely lead to taking
+            over an architect role for a longer time for the wrong price.</para>
+        <para dir="ltr">Try to discover early what the roles are, and guide your boundaries</para>
+        <para dir="ltr">Organize yourself to be able to get out quick by offering a solid long term
+            self sustainability.</para>
+        <para dir="ltr">Develop and document whatever you do as if you won't come back
+            tomorrow.</para>
+        <para dir="ltr">You don't want these projects to continue to haunt you for the rest of your
+            life.</para>
+        <para dir="ltr">And if they do haunt you... you made sure you can get back in with a
+            smile</para>
+        <para dir="ltr">Accept failure gracefully. You can only do the best you can do. Some
+            projects simply fail. Because of you or despite you.</para>
+        <para dir="ltr">We are all very proud people. Still it is no shame to admit that such and
+            such project has failed... and that you might have played a role in the failure.</para>
+        <para dir="ltr">Maybe you did not push enough for a change, maybe you did not pay attention,
+            ...</para>
     </section>
 </article>
