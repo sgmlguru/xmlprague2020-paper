@@ -14,7 +14,7 @@
         </author>
     </info>
     <section>
-        <title>We Label Ourselves as the <quote>Grumpy Old Men</quote></title>
+        <title>We Call Ourselves Grumpy Old Men</title>
         <para>Let us introduce ourselves. We're a pair of somewhat aged markup geeks, having worked
             in the field for some 50 years combined, a lot of which was spent bitching about what
             had already been. This is not the paper that will reveal all. However, it is the paper
@@ -40,20 +40,491 @@
             went through while thinking - hoping, even - that you'll be nodding right along with
             us.</para>
     </section>
-    <!--# Religion, teams and legacy-->
-    <!--Cobol DB in XSD-->
-    <!--Religious about a programming language-->
-    <!--Working through the codebase and make it better.-->
-    <!--...-->
-    <!--# Misconceptions
-Page by Page
-DTDs are more poserful than you think-->
-    <!--# Opposing views
- * SGML is what you want
-* Authoring in Word is right, of course-->
     <section>
-        <!--This is sort of like conclusions-->
+        <title>Religion</title>
+        <para>TBA</para>
+        <section>
+            <title>Programming Languages as Religion</title>
+            <!--Religious about a programming language-->
+            <para dir="ltr">Being too religious about a programming language or a vocabulary does
+                not always help a project.</para>
+            <para dir="ltr">Some years ago I presented a workshop after the audit of a XML
+                transformation code base. </para>
+            <para dir="ltr">I was invited to do so because the customer found out that very small
+                functional changes to the existing proprietary transformer really took developers a
+                lot of time to develop and </para>
+            <para dir="ltr">testing always revealed that a small fix at one point raised another
+                issue elsewhere.</para>
+            <para dir="ltr">It was obvious they were using the wrong technology for the job at
+                hand.</para>
+            <para dir="ltr">I managed to convince the managers in the workshop that a different
+                technology (XSLT to no surprise) would pay off really soon,</para>
+            <para dir="ltr">as it would be a much better fit to the job.</para>
+            <para dir="ltr">After a coffee break we would discuss migration plans,
+                training...</para>
+            <para dir="ltr">None of the developers present realised I understood the local language,
+                so near the coffee machine I overheard an agitated discussion about the
+                techology.</para>
+            <para dir="ltr">One of the developers mentioned firmly that XSLT would only be used
+                "over his dead body"</para>
+            <para dir="ltr">I was assured by the manager that they would handle the situation
+                without much problems and we planned migration, training, contracts.</para>
+            <para dir="ltr">After my flight back home, there was a message on my voicemail thanking
+                me for the audit and workshop. The project however was cancelled early because of
+                developer protest.</para>
+        </section>
+        <section>
+            <title>The Strict DTD</title>
+            <!--Strict DTDs-->
+            <para dir="ltr">I wrote a set of DTDs and a bunch of transformation pipelines for a
+                client that was merging their content with another company’s (as in actually merging
+                two sets of documents with the same text but with differing tagging). Among the DTDs
+                was an exchange DTD, an intermediate format when converting from one format to
+                another, and a somewhat more strict DTD for authoring the merged content. The two
+                DTDs were related, of course; the exchange format was the intermediate format used
+                when converting external documents from whatever source they used to the new
+                authoring DTD.</para>
+            <para dir="ltr">In my mind, the big job was to move from the external source to the
+                exchange format. Moving from the exchange format to the authoring format was mostly
+                about tidying things up. Typically, the first pipeline, from the source to exchange,
+                would be in the range of 80 or so XSLT steps while the second pipeline, from
+                exchange to authoring, was 18 steps. The authoring format would still have various
+                optional structures, though, and #IMPLIED attributes, as the merge resulted in
+                inevitable compromises. My plan was to add a Schematron to do some additional
+                validation and tightening-up, based on the authoring format.</para>
+            <para dir="ltr">But when some of the other company’s devs heard about my plans, they
+                said “we MUST do a stricter DTD to aid the authors!” Nonplussed, I repeated the bits
+                about additional validation using a Schematron. Maybe they missed that part.</para>
+            <para dir="ltr">“No, we MUST have a strict DTD!”</para>
+            <para dir="ltr">This was getting weird. I explained that there was no way to do that
+                strict DTD - things would have to remain optional and #IMPLIED, or quite a few
+                documents wouldn’t be valid. I asked what they had against the DTD+SCH combo. We’re
+                talking about well-known and well-supported standards. There were no actual answers
+                at first, only the insistence of a strict DTD, “because authors have a hard time
+                knowing what to do if the DTD doesn’t properly guide them.”</para>
+            <para dir="ltr">I went through what’s normally my sales pitch about the usefulness and
+                adaptability of Schematron rules, and how they can help authors in ways DTDs cannot.
+                And thinking that I shouldn’t have to be doing this. They were devs, ferchrissakes.
+                But they insisted, stating that they knew what Schematrons were and they did think
+                they were useful, but... and they got their boss (who wouldn’t know a Schematron
+                even if it bit him) to back them up.</para>
+            <para dir="ltr">Much later, I had a one-on-one with one of the devs and the conversation
+                drifted to Schematrons. And after some discussion, he finally said “Schematron is a
+                Java library, right?”</para>
+            <para dir="ltr">This is about pride and about firmly set beliefs without all the facts.
+                And it’s also about devs with too much power.</para>
+        </section>
+    </section>
+    <section>
+        <title>Misconceptions</title>
+        <para>TBA</para>
+        <section>
+            <title>Page by Page</title>
+            <!--Page by Page-->
+            <para dir="ltr">I was tasked with collecting requirements from a number of companies
+                owned by the same global monster in order to design a single system and associated
+                schemas and processes for handling the documentation and publishing needs of all
+                those companies.</para>
+            <para dir="ltr">This one company I talked to needed their manuals published in 27
+                languages (EU, mostly, as you might guess) but their output was handled in, shall we
+                say, a doubtful manner. </para>
+            <para dir="ltr">Basically, they had one MS Word file per manual page. A 70-page manual
+                would thus consist of 70 files. They then made sure that the translations of one
+                page - or file - would fit into that same page, including images and
+                everything.</para>
+            <para dir="ltr">All 27 languages would thus have the same number of pages, which they
+                thought was great and really cost-saving because they’d then be able to use the same
+                ToCs and indexes regardless of language.</para>
+            <para dir="ltr">And so they thought the natural progression from this state would be to
+                do those files in XML instead, because writing and translating saves a lot of money.
+                Right??</para>
+            <para dir="ltr">This one, of course, is about fundamental misconceptions. Like in
+                “WHAT?!?”</para>
+        </section>
+        <section>
+            <title>The Strict DTD, Part 2</title>
+            <!--(Comment about Strict DTDs (more powerful than you think)-->
+            <para/>
+        </section>
+        <section>
+            <title>We've Always Done This</title>
+            <!--Legal docs, DITA OT stories-->
+            <para dir="ltr">Recently I developed (yet another) MS Word transformer to XML. Yes,
+                customers do use MS Word for XML authoring.</para>
+            <para dir="ltr">I was called in because a first attempt had failed over the past few
+                years.</para>
+            <para dir="ltr">This story is about legal publishing. Some acts have books, chapters and
+                sections other acts just have chapters other have even deeper nesting.</para>
+            <para dir="ltr">The information model cares for all of that.</para>
+            <para dir="ltr">The contractor had told the publisher that it was impossible to
+                differentiate between a chapter in one document or the other</para>
+            <para dir="ltr">if chapters would not always be styled reliably on the same
+                level.</para>
+            <para dir="ltr">The project could only be successful if chapters were always styled
+                "heading3", sections always "heading4" (as an example).</para>
+            <para dir="ltr">So the publisher started restyling all their content to be in line with
+                the contractors requirements... and gave on that effort after some 1000 pages out
+                200000...</para>
+            <para dir="ltr">I inherited the stylesheet development work of an old DITA OT project in
+                the automotive industry for print and HTML.</para>
+            <para dir="ltr">Challenging, quite a few car types, over 20 languages including Hebrew
+                and Arab.</para>
+            <para dir="ltr">For some years the information architect of my contractor had made every
+                suggestion of the car manufacturer on the printed pages into a task for stylesheet
+                development.</para>
+            <para dir="ltr">The reviewers of the printed manuals at the site of the car manufacturer
+                all had different ideas, sometimes conflicting,</para>
+            <para dir="ltr">and the response of the information architect had always been to mandate
+                exceptions fixed in the stylesheet.</para>
+            <para dir="ltr">It had never occurred to them to fix things in the actual DITA
+                content... except adding yet another outputclass once in a while.</para>
+            <para dir="ltr">There was a continuous pressure of publishing, one car type after the
+                other, one language after the other, each one leading to incremental changes to the
+                stylesheets,</para>
+            <para dir="ltr">causing awful delays in delivery of printed manuals.</para>
+            <para dir="ltr">The DITA OT developer had indicated he no longer had the time to respond
+                to all the work coming in.</para>
+            <para dir="ltr">So I was hired for some smaller development tasks and inherited a code
+                base that had more xsl:if and xsl:when clauses then it had templates.</para>
+            <para dir="ltr">I slowly started changing the mentality from fix-in-stylesheets (one
+                part time developer) to fix-in-content (5 full time editors) but never managed to
+                change course on time.</para>
+            <para dir="ltr">Eventually my contractor lost his contract because of the delays.</para>
+            <para dir="ltr">Same contractor then got the brilliant idea to start using their
+                expertise and use DITA for a legal content publishing project. I politely passed on
+                that one.</para>
+        </section>
+    </section>
+    <section>
+        <title>Teams</title>
+        <para>TBA</para>
+        <section>
+            <title>90-minute Standups</title>
+            <!--90 minute standups-->
+            <para dir="ltr">In the early days of using agile development methods, I worked half time
+                for a somewhat smaller integrator.</para>
+            <para dir="ltr">One big project consumed most of the company resources and also charged
+                some of the work out to consultants such as myself.</para>
+            <para dir="ltr">In order to glue all of teams efforts together we had a daily standup
+                meeting with about 45 people.</para>
+            <para dir="ltr">The daily standup took an hour, sometimes up to 90 minutes. Working only
+                halftime in the project, I was still attending the standup every day.</para>
+            <para dir="ltr">Well, I got dismissed from the standup after I started mentioning the
+                daily meeting explicitly in my timesheets.</para>
+            <para dir="ltr">Anyhow. At some point the end-customer cancelled the project for
+                budgetary reasons.</para>
+        </section>
+        <section>
+            <title>The Build Is Green</title>
+            <!--Test driven dev and green builds-->
+            <para dir="ltr">Talking about agile development. In a project I worked in there where
+                some trained "scrum masters" doing the Java development part of the work.</para>
+            <para dir="ltr">They were extremely keen on using all the techniques they learned in the
+                project: peer programming but mainly Test Driven Development.</para>
+            <para dir="ltr">After setting up a test environment and a big screen, their only focus
+                to the project became "making the build green".</para>
+            <para dir="ltr">At some point we had a couple of rough days in the project, and "the
+                build" had been red for days. </para>
+            <para dir="ltr">Suddenly the scrum masters started singing "the build is green, the
+                build is green" and prepared to leave for the evening.</para>
+            <para dir="ltr">Well it had never been as bad as on that particular point. Everything
+                broke apart, no results to be found anywhere.</para>
+            <para dir="ltr">Pointing that out the response was: "You can not spoil the fun, the
+                build is green".</para>
+            <para dir="ltr">They left the office with a suggestion... if there is something you
+                don't like, you will have to write a test for that</para>
+        </section>
+        <section>
+            <title>Make It Better</title>
+            <!--Working through the codebase and make it better.-->
+            <para dir="ltr">We do often get so focused on the technical aspects of a task that we
+                forget about the legacy or the team.</para>
+            <para dir="ltr">In a very recent gig the task was very clear: work through the codebase
+                and make it better. It needs to be more robust and should run faster.</para>
+            <para dir="ltr">Reaching the set goals would not be extremely difficult. The existing
+                code was already above average, and improving on some of the techniques used would
+                already make enough of a difference.</para>
+            <para dir="ltr">It was however a bit hard to get all the teams cooperation for the
+                things I was doing. Until a sprint-evaluation revealed that people disliked the
+                black box approach I took.</para>
+            <para dir="ltr">The development team came up with a plan to have a weekly meeting to
+                discuss the changes made so far and the reasons for making the change.</para>
+            <para dir="ltr">That communicative approach made a huge difference for the atmosphere
+                and cooperation.</para>
+            <para dir="ltr">It is all so obvious after the facts, but it taught me to have even more
+                attention for the different sensitivities in a team.</para>
+        </section>
+    </section>
+    <section>
+        <title>Office Politics</title>
+        <para>TBA</para>
+        <section>
+            <title>An XSD for Appearances</title>
+            <!--An XSD for Appearances-->
+            <para dir="ltr">I was tasked with designing an XSD for a client. The XSD was supposedly
+                for describing messages in a system. The work was to be done on site and my contract
+                was for six weeks. Oh, and this was in around 2005, before the advent of the
+                smartphone, mobile internet, etc.</para>
+            <para dir="ltr">There was no computer ready for me when I arrived. That is, the hardware
+                was there but the software wasn’t. It was “on order” from the IT department. I
+                didn’t have much interaction with the other devs, just specs from an initial
+                implementation proposal and some mostly irrelevant background information. I also
+                didn’t have much contact with the other devs; they were busy coding their thing
+                based on the implementation proposal, plus their own ideas (which I found out
+                later). The only guy I really talked to was the project manager, mostly because he
+                was a friend.</para>
+            <para dir="ltr">Luckily, I had my own personal laptop. No internet connection since this
+                was on-site and foreign computers were a no-no, so no email, but I had my own
+                software for the XML stuff, plus all those implementation proposal specs (which I
+                pretty much followed to the letter).</para>
+            <para dir="ltr">I delivered an XSD that did exactly what it was supposed to on time
+                during week #6, on a floppy disk since I had no means to deliver without an internet
+                connection.</para>
+            <para dir="ltr">On the Friday of week #6, I had lunch with the project manager. He said
+                “we’re not going to use your XSD.” And the computer I was appointed never got its
+                software.</para>
+            <para dir="ltr">I later realised that the waterfall, up-front approach was probably not
+                what the devs or the company wanted and their solution never included an XSD. It
+                was, however, described in the proposal, and so it was preordained which meant that
+                it had to be included in the project. Yes, that’s me. But <emphasis role="italic">my
+                    XSD was never meant to be included in the solution</emphasis>.</para>
+            <para dir="ltr">So this one is about a task destined, even designed, to fail, a feature
+                meant to be excluded from the finished product. I suppose it’s about the downsides
+                of waterfall methodologies, too, where you have to include something because it was
+                in the IP. And it’s about office politics, the nasty variety where they exclude
+                people from their meetings based on, well, a feature that was never meant to be
+                there.</para>
+            <para dir="ltr">We could add this as “office politics” but this sort of means that
+                everything is about office politics.</para>
+        </section>
+        <section>
+            <title>Strict DTD, Part 2</title>
+            <!--Comment about what the Strict DTD led to (a black box that translated between an authoring DTD and a production DTD for no good reason)-->
+            <para/>
+        </section>
+    </section>
+    <section>
+        <title>Software</title>
+        <para>TBA</para>
+        <section>
+            <title>Open Source as Policy</title>
+            <!--Licensensed software vs open source (or long weekends)-->
+            <para dir="ltr">It was around the year 2000. A publisher invited me to look into their
+                publication process of one of their somewhat more intensive publications.</para>
+            <para dir="ltr">There was a team of about 10 developers. This means the department had
+                10 computers.</para>
+            <para dir="ltr">One of the developers had architected a system that would make the
+                publication, occupying all the computers in the department full time for three
+                days.</para>
+            <para dir="ltr">Just mentioning... the solution required Sablotron, Perl and a lot of
+                network communication.</para>
+            <para dir="ltr">That implied they had to wait for a long weekend to publish... if
+                something failed during the process... they had to wait for the next long
+                weekend.</para>
+            <para dir="ltr">This one publication was often delayed a few months because of
+                that.</para>
+            <para dir="ltr">I looked into this and could prove that the entire process could be done
+                in just a few hours on a single machine.</para>
+            <para dir="ltr">However, this implied the use of a reasonably priced licensed
+                software.</para>
+            <para dir="ltr">The manager refused the proposal because it failed against the open
+                source software only policy of the company...</para>
+            <para dir="ltr">and the existing solution did work... didn't it? They continued to use
+                the existing approach for a couple more years.</para>
+        </section>
+        <section>
+            <title>Old Software</title>
+            <!--DITA OT and a 10 yo XSLT2 processor-->
+            <para dir="ltr">Speaking of licensed software... I had to work around missing
+                functionality doing XSLT development in the DITA Open Toolkit a number of
+                times,</para>
+            <para dir="ltr">simply because it came bundled with a 10 year old XSLT2.0 processor.
+                That seemed to be the only option to use a node-set() extension function without
+                paying a license cost.</para>
+            <para dir="ltr">Spending an overhead of multiple hours in order to avoid the moderate
+                license cost of about one of those hours. </para>
+        </section>
+        <section>
+            <title>Subscription Services</title>
+            <!--Web crawler replaced by API-->
+            <para dir="ltr">I am running a subscription service providing some transformed data in
+                specific formats to subscribers.</para>
+            <para dir="ltr">However I am getting the actual information for this service from
+                crawling databases via a web interface.</para>
+            <para dir="ltr">This is all nicely covered by a ten year old contract with the
+                information provider.</para>
+            <para dir="ltr">I failed to realise the information provider was purchased by an
+                international consortium and the new owners simply blocked my servers IP
+                addresses.</para>
+            <para dir="ltr">Information could now only be obtained through the API they had
+                developed, but they no longer had room for another partner...</para>
+            <para dir="ltr">It took me weeks and a good lawyer to force myself into a partner
+                agreement.</para>
+            <para dir="ltr">Then it took me weeks to replace the crawler with a service that
+                communicated with the API.</para>
+            <para dir="ltr">During that period I lost half of the subscribers to a service that was
+                supposed to update at least weekly.</para>
+        </section>
+        <section>
+            <title>You Can Choose Any Software You Want</title>
+            <!--Documentum at Volvo Cars-->
+            <para dir="ltr">A well-known global automotive manufacturer needed to XML-ify their
+                aftermarket documentation using a system (they were using PageMaker, mostly) they
+                wanted us to design and build. I was first out, to analyse requirements, to write
+                DTDs (yup, those were the days), and to recommend ways to do the DMS so it would
+                support it all in a really, really cool way.</para>
+            <para dir="ltr">I started working by analysing documents (glovebox manuals for various
+                markets, accessory catalogues, warranty booklets and the like). I quickly realised
+                there were a lot of neat savings to be made by modularising the information, and
+                then reusing aided by some light profiling (different engines, gearboxes, etc),
+                linking, and general standardisation of layout. I wrote a pretty cool set of DTDs
+                using all the then-modern technologies such as extended XLink (Xinclude wasn’t
+                really a thing at that point) and set up a list of cool things we could do with the
+                system.</para>
+            <para dir="ltr">This is when they followed up with a bunch of requirements:</para>
+            <itemizedlist>
+                <listitem dir="ltr">
+                    <para dir="ltr">You can choose any editor you want but it has to be Arbortext
+                        Epic</para>
+                </listitem>
+                <listitem dir="ltr">
+                    <para dir="ltr">You can choose any underlying DB you want but it all needs to be
+                        based on Documentum.</para>
+                </listitem>
+                <listitem dir="ltr">
+                    <para dir="ltr">You really should use that new formatting engine Arbortext
+                        provides (but please use any standards you want). Was it called E3?</para>
+                </listitem>
+                <listitem dir="ltr">
+                    <para dir="ltr">Oh, and we need you to move all the old SGML stuff we have for
+                        service info, parts DB (COBOL!), and the like to the new system as well.
+                        Which means going from SGML to XML.</para>
+                </listitem>
+            </itemizedlist>
+            <para dir="ltr">Let’s see. No extended XLink (because of no way to properly handle
+                out-of-line lookups in the editor OR the DB). No inline CDATA-based links either
+                (because Arbortext and FOSIs at the time did not do them.</para>
+            <para dir="ltr">Which meant ID/IDREF pairs and a LOT of compromises.</para>
+            <para dir="ltr">And no, we can’t do the driver’s manuals in XML either, because there
+                would be compromises in the layout and the manuals need to look pretty. Never mind
+                that we go to 42 languages and by not using XML we add a 70% cost to every single
+                manual produced. PageMaker it is.</para>
+            <para dir="ltr">And no, let’s not do the accessory catalogues in XML either, for similar
+                reasons.</para>
+            <para dir="ltr">Documentum was added a DMS layer that required horrible processing
+                attributes on many elements (this is how we found out that Arbortext’s parser at the
+                time included a hard 8,000-character attribute length limit).</para>
+            <para dir="ltr">The first login in test took about 30 minutes. In the words of the
+                software architect: <quote>This could have been a really fast system without
+                    Documentum.</quote> I think I said something in a similar vein about Arbortext,
+                and the guy who did most of the FOSIs muttered something about E3.</para>
+            <para dir="ltr">So this story is all about disastrous decisions made for us regarding
+                technology, but also about office politics (authors were powerful enough to refuse
+                XML-based driver’s manuals, etc). I’d add this to “The Author Is King”.</para>
+        </section>
+    </section>
+    <section>
+        <title>Legacy</title>
+        <para/>
+        <section>
+            <title>Those Were the Days</title>
+            <!--Cobol DB in XSD-->
+            <para dir="ltr">I was tasked with writing an XSD for a company that wanted to move away
+                from this ancient COBOL monster with heavily typed data ensuring that they’d never
+                go past a couple of Megabytes, created in a time when every byte cost a
+                fortune.</para>
+            <para dir="ltr">Yet, it quickly became apparent that they chose XSDs because the data
+                described by them can be typed… just like before. In the end, I delivered a schema
+                that rather faithfully reproduced that old CBOL monster but with no additional
+                value.</para>
+            <para dir="ltr">This is not about a legacy system as much as it is about a legacy
+                mindset. I could have avoided the pain simply by asking <quote>what do you want to
+                    achieve with your new XSD?</quote>”</para>
+        </section>
+        <section>
+            <title>Latin 1 and Entitites</title>
+            <!--Latin 1 and entities-->
+            <para dir="ltr">Publisher X stores all of their documents - hundreds of thousands of
+                them - in an old, heavily customised Oracle DB. They’ve built a document management
+                layer on top of the thing but they don’t really have proper versioning on either
+                documents or the DTDs that govern them. They still run OmniMark scripts to do
+                validation, some light processing and the like.</para>
+            <para dir="ltr">Oh, and it’s all in Latin 1, with about 250 or so general entities. This
+                includes the Omnimark scripts.</para>
+            <para dir="ltr">Long before I first knew the company, they’ve been wanting to move to
+                UTF-8 but the management and various project decisions have consistently held them
+                back. They’ve bought companies and merged entire content libraries with their own,
+                and it’s all been converted to… Latin 1. On an office whiteboard, there is a counter
+                for the number of days since the last encoding-related error that never wanders far
+                from “1”; in other words, there are issues almost daily, ranging from web pages that
+                refuse to format to documents that refuse to load to that ancient Oracle DB.</para>
+            <para dir="ltr">Yet, the company handles this technical debt mostly by ignoring it.
+                They’ve built new presentation systems and increased their print offering, and now
+                they’re about to add a MarkLogic DB on the side. ML will mirror the Oracle thing and
+                will be used for analysis to begin with; in time it might even replace the Oracle
+                monster.</para>
+            <para dir="ltr">One assumes that they’ll somehow incorporate Latin 1 and DTDs in ML,
+                since while they’re always saying that they MUST move to Unicode and UTF-8,
+                everything else comes first.</para>
+            <para dir="ltr">This is an interesting one to categorise. It’s about technical debt
+                being ignored again and again, of course, but it’s also about legacy systems and
+                processes. The Oracle thing, with Omnimark and aging processes, is a big warning
+                light, though, and if you see this kind of legacy system (as in “ancient”), it’s a
+                tell-tale sign to run if this sort of thing bothers you.</para>
+        </section>
+    </section>
+    <section>
+        <title>Opposing Views</title>
+        <para>TBA</para>
+        <section>
+            <title>Sometimes SGML Is What You Want</title>
+            <!--SGML is what you want-->
+            <para dir="ltr">I was part of a consulting effort to deliver a new system to an
+                aerospace company, and I was among the first in to take a long hard look at their
+                current information set, most of which was early S1000D SGML. This was close to 20
+                years ago.</para>
+            <para dir="ltr">After careful consideration, I realised that them using SGML was just
+                fine; no need to author in XML, no need to write an XML DTD or use the XML version
+                of the standard (S1000D back then did not yet have a proper XML DTD or schema, or
+                proper support for it) and migrate the content. All we needed was a modern approach
+                to authoring, managing, and storing the SGML, and a bunch of conversions to XML and
+                other formats <emphasis role="italic">when publishing</emphasis>. Because the fact
+                was that their suppliers all used SGML, and they delivered to companies and
+                organisations that all used SGML. No need to change any of this; it would be costly
+                and unnecessary, and we’d have to convert back to SGML anyway.</para>
+            <para dir="ltr">Not to mention that the client was fine with SGML, too. The issue was
+                not SGML, the issue was an aging system that couldn’t keep up.</para>
+            <para dir="ltr">My employer was in the process of merging with another consulting firm,
+                however, and the players all needed to score. They also liked Documentum and were
+                partners with them, and there were political advantages to using it. For the
+                business, that is; never mind the client. They need XML because XML is modern and
+                new and hip, and it will brush your teeth in the evening and wake you up with coffee
+                the next day. And besides, Documentum wouldn’t do SGML.</para>
+            <para dir="ltr">The process dragged on and on, and I was eventually pulled from the
+                project. I left the company not too long after, actually. And the thing they built
+                was an absolute disaster that was eventually settled in court while the client
+                bought a competitor’s product instead.</para>
+            <para dir="ltr">This one is about ignoring the customer’s needs while betting on new
+                technology because it’s new and therefore the best. So religious reasons,
+                really.</para>
+        </section>
+        <section>
+            <title>Sometimes Word Is What You Want</title>
+            <!--Authoring in Word is right, of course-->
+            <para dir="ltr">Most legal publisher use Word in one way or another. I worked with one
+                that published Precedents document templates for lawyers in Word format, in spite of
+                the Word files actually being produced in XML, added some intricate and very clever
+                tagging, and then converted to Word. As an XML geek, I was dead against this, of
+                course. Word seemed like an unnecessary extra layer.</para>
+            <para dir="ltr">But when I really thought about it, I realised how wrong I was: the end
+                users are non-technical lawyers and it would be a lot more complex (technically and
+                politically) to get them to use an XML tool. Sometimes MS Word is what you really
+                want.</para>
+        </section>
+    </section>
+    <section>
         <title>Wisdom</title>
+        <!--This is sort of like conclusions-->
         <para>Here's where we impart wisdom</para>
     </section>
 </article>
