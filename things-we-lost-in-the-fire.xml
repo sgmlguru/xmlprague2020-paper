@@ -351,21 +351,19 @@
         </section>
         <section>
             <title>You Can Choose Any Software You Want</title>
-            <!--Documentum at Volvo Cars-->
             <para dir="ltr">A well-known global automotive manufacturer needed to XML-ify their
-                aftermarket documentation using a system (they were using PageMaker, mostly) they
-                wanted us to design and build. I was first out, to analyse requirements, to write
-                DTDs (yup, those were the days), and to recommend ways to do the DMS so it would
-                support it all in a really, really cool way.</para>
-            <para dir="ltr">I started working by analysing documents (glovebox manuals for various
-                markets, accessory catalogues, warranty booklets and the like). I quickly realised
-                there were a lot of neat savings to be made by modularising the information, and
-                then reusing aided by some light profiling (different engines, gearboxes, etc),
-                linking, and general standardisation of layout. I wrote a pretty cool set of DTDs
-                using all the then-modern technologies such as extended XLink (Xinclude wasn’t
-                really a thing at that point) and set up a list of cool things we could do with the
-                system.</para>
-            <para dir="ltr">This is when they followed up with a bunch of requirements:</para>
+                aftermarket documentation using a system they wanted us to design and build (at the
+                time they mostly used PageMaker for their aftermarket docs). I was first out, to
+                analyse requirements, write DTDs, and recommend ways to do the system so it would
+                support everything in a really, really cool way.</para>
+            <para dir="ltr">My analysis of the existing documents (glovebox manuals, accessory
+                catalogues, warranty booklets, etc) suggested a lot of savings to be made by
+                modularising the information, aided by some light profiling (different engines,
+                gearboxes, etc), linking, and general standardisation of processing. I wrote a set
+                of DTDs using all the then-modern technologies such as extended XLink<footnote>
+                    <para>Xinclude wasn’t really a thing at that point.</para>
+                </footnote> and set up a list of cool things we could do with the system.</para>
+            <para dir="ltr">This is when they came back with a bunch of requirements:</para>
             <itemizedlist>
                 <listitem dir="ltr">
                     <para dir="ltr">You can choose any editor you want but it has to be Arbortext
@@ -386,33 +384,33 @@
                 </listitem>
             </itemizedlist>
             <para dir="ltr">Let’s see. No extended XLink (because of no way to properly handle
-                out-of-line lookups in the editor OR the DB). No inline CDATA-based links either
-                (because Arbortext and FOSIs at the time did not do them.</para>
-            <para dir="ltr">Which meant ID/IDREF pairs and a LOT of compromises.</para>
-            <para dir="ltr">And no, we can’t do the driver’s manuals in XML either, because there
-                would be compromises in the layout and the manuals need to look pretty. Never mind
-                that we go to 42 languages and by not using XML we add a 70% cost to every single
-                manual produced. PageMaker it is.</para>
+                out-of-line lookups in the editor OR the DB). No inline <code>CDATA</code>-based
+                links either (because Arbortext and FOSIs at the time did not do them).</para>
+            <para dir="ltr">Which meant generating <code>ID/IDREF</code> pairs in a really mad
+                process whenever handling the information, plus a LOT of other compromises.</para>
+            <para dir="ltr">They also decided the driver’s manuals couldn't be done in XML because
+                there would be compromises in the layout and the manuals need to look pretty. Never
+                mind that we go to 42 languages and by not using XML we add a 70% cost to every
+                single manual produced. PageMaker it is.</para>
             <para dir="ltr">And no, let’s not do the accessory catalogues in XML either, for similar
                 reasons.</para>
             <para dir="ltr">Documentum was added a DMS layer that required horrible processing
                 attributes on many elements (this is how we found out that Arbortext’s parser at the
-                time included a hard 8,000-character attribute length limit).</para>
-            <para dir="ltr">The first login in test took about 30 minutes. In the words of the
-                software architect: <quote>This could have been a really fast system without
-                    Documentum.</quote> I think I said something in a similar vein about Arbortext,
-                and the guy who did most of the FOSIs muttered something about E3.</para>
-            <para dir="ltr">So this story is all about disastrous decisions made for us regarding
-                technology, but also about office politics (authors were powerful enough to refuse
-                XML-based driver’s manuals, etc). I’d add this to “The Author Is King”.</para>
+                time included a hard 8,000-character attribute length limit). The first login in
+                test took about 30 minutes. In the words of the software architect: <quote>This
+                    could have been a really fast system without Documentum.</quote> I said
+                something in a similar vein about Arbortext, and the guy who did most of the FOSIs
+                cursed about E3.</para>
+            <para>The system ended up costing about ten or fifteen times the budget, required a LOT
+                of bug fixing (the cost of which wasn't part of the inflated budget), but it's
+                supposedly still in use.</para>
+            <!--<para dir="ltr">So this story is all about disastrous decisions made for us regarding technology, but also about office politics (authors were powerful enough to refuse XML-based driver’s manuals, etc). I’d add this to “The Author Is King”.</para>-->
         </section>
     </section>
     <section>
         <title>Legacy</title>
-        <para/>
         <section>
             <title>Those Were the Days</title>
-            <!--Cobol DB in XSD-->
             <para dir="ltr">I was tasked with writing an XSD for a company that wanted to move away
                 from this ancient COBOL monster with heavily typed data ensuring that they’d never
                 go past a couple of Megabytes, created in a time when every byte cost a
@@ -427,7 +425,6 @@
         </section>
         <section>
             <title>Latin 1 and Entitites</title>
-            <!--Latin 1 and entities-->
             <para dir="ltr">Publisher X stores all of their documents - hundreds of thousands of
                 them - in an old, heavily customised Oracle DB. They’ve built a document management
                 layer on top of the thing but they don’t really have proper versioning on either
@@ -444,53 +441,45 @@
                 refuse to format to documents that refuse to load to that ancient Oracle DB.</para>
             <para dir="ltr">Yet, the company handles this technical debt mostly by ignoring it.
                 They’ve built new presentation systems and increased their print offering, and now
-                they’re about to add a MarkLogic DB on the side. ML will mirror the Oracle thing and
-                will be used for analysis to begin with; in time it might even replace the Oracle
+                they’re about to add a MarkLogic DB on the side. MarkLogic will mirror Oracle and
+                will be used for analysis to begin with; in time, it might replace the Oracle
                 monster.</para>
-            <para dir="ltr">One assumes that they’ll somehow incorporate Latin 1 and DTDs in ML,
-                since while they’re always saying that they MUST move to Unicode and UTF-8,
-                everything else comes first.</para>
-            <para dir="ltr">This is an interesting one to categorise. It’s about technical debt
-                being ignored again and again, of course, but it’s also about legacy systems and
-                processes. The Oracle thing, with Omnimark and aging processes, is a big warning
-                light, though, and if you see this kind of legacy system (as in “ancient”), it’s a
-                tell-tale sign to run if this sort of thing bothers you.</para>
+            <para dir="ltr">One assumes that they’ll somehow incorporate Latin 1 and DTDs in it,
+                though, since while they’re always saying that they MUST move to Unicode and UTF-8,
+                everything else always comes first.</para>
+            <!--<para dir="ltr">This is an interesting one to categorise. It’s about technical debt being ignored again and again, of course, but it’s also about legacy systems and processes. The Oracle thing, with Omnimark and aging processes, is a big warning light, though, and if you see this kind of legacy system (as in “ancient”), it’s a tell-tale sign to run if this sort of thing bothers you.</para>-->
         </section>
     </section>
     <section>
         <title>Opposing Views</title>
-        <para>TBA</para>
         <section>
             <title>Sometimes SGML Is What You Want</title>
-            <!--SGML is what you want-->
             <para dir="ltr">I was part of a consulting effort to deliver a new system to an
-                aerospace company, and I was among the first in to take a long hard look at their
-                current information set, most of which was early S1000D SGML. This was close to 20
-                years ago.</para>
+                aerospace company and among the first in to take a long hard look at their current
+                information set, most of which was early S1000D SGML. This was close to 20 years
+                ago.</para>
             <para dir="ltr">After careful consideration, I realised that them using SGML was just
                 fine; no need to author in XML, no need to write an XML DTD or use the XML version
                 of the standard (S1000D back then did not yet have a proper XML DTD or schema, or
                 proper support for it) and migrate the content. All we needed was a modern approach
                 to authoring, managing, and storing the SGML, and a bunch of conversions to XML and
-                other formats <emphasis role="italic">when publishing</emphasis>. Because the fact
-                was that their suppliers all used SGML, and they delivered to companies and
-                organisations that all used SGML. No need to change any of this; it would be costly
-                and unnecessary, and we’d have to convert back to SGML anyway.</para>
+                other formats <emphasis role="italic">when publishing</emphasis>. Their suppliers
+                all used SGML, and they delivered to companies and organisations that all used SGML.
+                No need to change any of this; it would be costly and unnecessary, and we’d have to
+                convert back to SGML anyway.</para>
             <para dir="ltr">Not to mention that the client was fine with SGML, too. The issue was
                 not SGML, the issue was an aging system that couldn’t keep up.</para>
-            <para dir="ltr">My employer was in the process of merging with another consulting firm,
-                however, and the players all needed to score. They also liked Documentum and were
-                partners with them, and there were political advantages to using it. For the
-                business, that is; never mind the client. They need XML because XML is modern and
-                new and hip, and it will brush your teeth in the evening and wake you up with coffee
-                the next day. And besides, Documentum wouldn’t do SGML.</para>
+            <para dir="ltr">My employer was in the process of merging with another consultancy,
+                however, and the players all needed to score. They both liked Documentum and were
+                partners with them, so there were political advantages to using it. For the
+                business, that is; never mind the client. So they decided they need XML because XML
+                is modern and new and hip, and it will brush your teeth in the evening and wake you
+                up with coffee the next day. And besides, Documentum wouldn’t do SGML.</para>
             <para dir="ltr">The process dragged on and on, and I was eventually pulled from the
-                project. I left the company not too long after, actually. And the thing they built
-                was an absolute disaster that was eventually settled in court while the client
-                bought a competitor’s product instead.</para>
-            <para dir="ltr">This one is about ignoring the customer’s needs while betting on new
-                technology because it’s new and therefore the best. So religious reasons,
-                really.</para>
+                project. I left the company not too long after. The thing they ended up building was
+                an absolute disaster that was eventually settled in court while the client bought a
+                competitor’s product instead.</para>
+            <!--<para dir="ltr">This one is about ignoring the customer’s needs while betting on new technology because it’s new and therefore the best. So religious reasons, really.</para>-->
         </section>
         <section>
             <title>Sometimes Word Is What You Want</title>
