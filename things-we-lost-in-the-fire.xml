@@ -98,7 +98,6 @@
         <para>TBA</para>
         <section>
             <title>Page by Page</title>
-            <!--Page by Page-->
             <para dir="ltr">I was tasked with collecting requirements from a number of companies
                 owned by the same global monster in order to design a single system and associated
                 schemas and processes for handling the documentation and publishing needs of all
@@ -116,14 +115,16 @@
             <para dir="ltr">And so they thought the natural progression from this state would be to
                 do those files in XML instead, because writing and translating saves a lot of money.
                 Right??</para>
-            <para dir="ltr">This one, of course, is about fundamental misconceptions. Like in
-                “WHAT?!?”</para>
+            <!--<para dir="ltr">This one, of course, is about fundamental misconceptions. Like in “WHAT?!?”</para>-->
         </section>
         <section>
             <title>The Strict DTD, Part 2</title>
             <!--(Comment about Strict DTDs (more powerful than you think)-->
             <para>The whole Strict DTD debacle was as much about misconceptions as it was about
-                religion. TBA</para>
+                religion, of course. The religion was in the magic of DTDs while the misconceptions
+                were about Schematrons. But the really worrying bits were all about them
+                    <emphasis>not knowing what Schematrons do but pretending they
+                did.</emphasis></para>
         </section>
         <section>
             <title>We've Always Done This</title>
@@ -176,10 +177,8 @@
     </section>
     <section>
         <title>Teams</title>
-        <para>TBA</para>
         <section>
             <title>90-minute Standups</title>
-            <!--90 minute standups-->
             <para dir="ltr">In the early days of using agile development methods, I worked half time
                 for a somewhat smaller integrator. A single big project consumed most of the
                 company's resources and also charged some of the work out to consultants such as
@@ -233,10 +232,8 @@
     </section>
     <section>
         <title>Office Politics</title>
-        <para>TBA</para>
         <section>
             <title>An XSD for Appearances</title>
-            <!--An XSD for Appearances-->
             <para dir="ltr">I was tasked with designing an XSD for a client. The XSD was supposedly
                 for describing messages in a system. The work was to be done on site and my contract
                 was for six weeks. Oh, and this was in around 2005, before the advent of the
@@ -276,15 +273,43 @@
         <section>
             <title>Strict DTD, Part 3</title>
             <!--Comment about what the Strict DTD led to (a black box that translated between an authoring DTD and a production DTD for no good reason)-->
-            <para/>
+            <para>That Strict DTD meant to do what you'd normally entrust Schematrons and style
+                guides with also came to be about office politics. The procedure was something like
+                this:</para>
+            <orderedlist>
+                <listitem>
+                    <para><quote>We want our strict DTD!</quote></para>
+                    <para><quote>It will make thousands of documents invalid. We can't do it. Use a
+                            bloody Schematron instead!</quote></para>
+                </listitem>
+                <listitem>
+                    <para><quote>We also want to use language X rather than English!</quote></para>
+                    <para><quote>How's that going to work with all of our non-X
+                        developers?</quote></para>
+                    <para><quote>We'll write instructions!</quote></para>
+                    <para><quote>Sorry, we might as well do the DTD in Klingon!<footnote>
+                                <para>Which is what I did, for a select number of attributes. It
+                                    took them about two months or so to spot it.</para>
+                            </footnote></quote></para>
+                </listitem>
+                <listitem>
+                    <para>(Office politics happens.)</para>
+                </listitem>
+                <listitem>
+                    <para><quote>Let's do a black-box solution that translates between the Strict
+                            DTD (for authoring) and the sensible DTD/Schematron combo that doesn't
+                            wreck anything!</quote> (Suggested by my team leader.)</para>
+                </listitem>
+            </orderedlist>
+            <para>So #5 is what happened. As I write this, they have an actual black box thing that
+                translates XML between the DB storage format and the authoring format. And the two
+                are <emphasis>not</emphasis> fully compatible.</para>
         </section>
     </section>
     <section>
         <title>Software</title>
-        <para>TBA</para>
         <section>
             <title>Open Source as Policy</title>
-            <!--Licensensed software vs open source (or long weekends)-->
             <para dir="ltr">Around 20 years ago, a publisher invited me to look into the publication
                 process of one of their somewhat more intensive publications.</para>
             <para dir="ltr">There was a team of about 10 developers. This means the department had
