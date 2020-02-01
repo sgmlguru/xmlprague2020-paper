@@ -205,8 +205,7 @@
             <para dir="ltr">In order to glue all of teams efforts together we had a daily standup
                 meeting with about 45 people. The daily standup took an hour, sometimes up to 90
                 minutes. Working only halftime in the project, I was still attending the standup
-                every day.</para>
-            <para dir="ltr">Well, I got dismissed from the standup after I started mentioning the
+                every day. Well, I got dismissed from the standup after I started mentioning the
                 daily meeting explicitly in my timesheets.</para>
             <para dir="ltr">In the end, the end-customer cancelled the project for budgetary
                 reasons.</para>
@@ -236,18 +235,17 @@
             <para dir="ltr">We do often get so focused on the technical aspects of a task that we
                 forget about the legacy or the team.</para>
             <para dir="ltr">In a very recent gig the task was very clear: work through the codebase
-                and make it better. It needs to be more robust and should run faster.</para>
-            <para dir="ltr">Reaching the set goals would not be extremely difficult. The existing
-                code was already above average, and improving on some of the techniques used would
-                already make enough of a difference.</para>
-            <para dir="ltr">It was however a bit hard to get all the teams cooperation for the
-                things I was doing. Until a sprint-evaluation revealed that people disliked the
-                black box approach I took.</para>
+                and make it better. It needs to be more robust and should run faster. Reaching the
+                set goals would not be extremely difficult. The existing code was already above
+                average, and improving on some of the techniques used would already make enough of a
+                difference. However, it was hard to get all the teams to accept the things I was
+                doing until a sprint evaluation revealed that people disliked the black-box approach
+                I took.</para>
             <para dir="ltr">The development team came up with a plan to have a weekly meeting to
-                discuss the changes made so far and the reasons for making the change.</para>
-            <para dir="ltr">That communicative approach made a huge difference for the atmosphere
-                and cooperation.</para>
-            <para dir="ltr">It is all so obvious after the facts, but it taught me to have even more
+                discuss the changes made so far and the reasons for making the change. That
+                communicative approach made a huge difference for the atmosphere and
+                cooperation.</para>
+            <para dir="ltr">It is all so obvious after the facts, but t taught me to have even more
                 attention for the different sensitivities in a team.</para>
         </section>
     </section>
@@ -305,58 +303,48 @@
         <section>
             <title>Open Source as Policy</title>
             <!--Licensensed software vs open source (or long weekends)-->
-            <para dir="ltr">It was around the year 2000. A publisher invited me to look into their
-                publication process of one of their somewhat more intensive publications.</para>
+            <para dir="ltr">Around 20 years ago, a publisher invited me to look into the publication
+                process of one of their somewhat more intensive publications.</para>
             <para dir="ltr">There was a team of about 10 developers. This means the department had
-                10 computers.</para>
-            <para dir="ltr">One of the developers had architected a system that would make the
+                10 computers. One of the developers had designed a system that would make the
                 publication, occupying all the computers in the department full time for three
                 days.</para>
-            <para dir="ltr">Just mentioning... the solution required Sablotron, Perl and a lot of
-                network communication.</para>
-            <para dir="ltr">That implied they had to wait for a long weekend to publish... if
-                something failed during the process... they had to wait for the next long
-                weekend.</para>
-            <para dir="ltr">This one publication was often delayed a few months because of
-                that.</para>
+            <para dir="ltr">Incidentally, the solution required Sablotron, Perl and a lot of network
+                communication.</para>
+            <para dir="ltr">That implied they had to wait for a long weekend to publish. If
+                something failed during the process, they'd have to wait for the next long weekend.
+                The publication was often delayed by several months because of that.</para>
             <para dir="ltr">I looked into this and could prove that the entire process could be done
-                in just a few hours on a single machine.</para>
-            <para dir="ltr">However, this implied the use of a reasonably priced licensed
-                software.</para>
-            <para dir="ltr">The manager refused the proposal because it failed against the open
-                source software only policy of the company...</para>
-            <para dir="ltr">and the existing solution did work... didn't it? They continued to use
-                the existing approach for a couple more years.</para>
+                in just a few hours on a single machine. However, this required the use of a
+                reasonably priced licensed software.</para>
+            <para dir="ltr">The manager refused the proposal because it failed against their open
+                source software-only policy... and the existing solution did work, didn't it? They
+                continued to use the existing approach for a couple more years.</para>
         </section>
         <section>
             <title>Old Software</title>
             <!--DITA OT and a 10 yo XSLT2 processor-->
-            <para dir="ltr">Speaking of licensed software... I had to work around missing
-                functionality doing XSLT development in the DITA Open Toolkit a number of
-                times,</para>
-            <para dir="ltr">simply because it came bundled with a 10 year old XSLT2.0 processor.
-                That seemed to be the only option to use a node-set() extension function without
+            <para dir="ltr">Speaking of licensed software, I had to work around missing
+                functionality doing XSLT development in the DITA Open Toolkit a number of times,
+                simply because it came bundled with a 10 year-old XSLT2.0 processor. That seemed to
+                be the only option to use a <code>node-set()</code> extension function without
                 paying a license cost.</para>
-            <para dir="ltr">Spending an overhead of multiple hours in order to avoid the moderate
-                license cost of about one of those hours. </para>
+            <para dir="ltr">Effectively, I had to spend multiple hours to work around a license cost
+                equalling about one of those hours. </para>
         </section>
         <section>
             <title>Subscription Services</title>
             <!--Web crawler replaced by API-->
             <para dir="ltr">I am running a subscription service providing some transformed data in
-                specific formats to subscribers.</para>
-            <para dir="ltr">However I am getting the actual information for this service from
-                crawling databases via a web interface.</para>
-            <para dir="ltr">This is all nicely covered by a ten year old contract with the
-                information provider.</para>
-            <para dir="ltr">I failed to realise the information provider was purchased by an
-                international consortium and the new owners simply blocked my servers IP
-                addresses.</para>
-            <para dir="ltr">Information could now only be obtained through the API they had
-                developed, but they no longer had room for another partner...</para>
+                specific formats to subscribers. However I am getting the actual information for
+                this service from crawling databases via a web interface. This is all nicely covered
+                by a ten year old contract with the information provider.</para>
+            <para dir="ltr">But then, one day the information provider was purchased by an
+                international consortium and the new owners simply blocked my server's IP address.
+                Information could now only be obtained through the API they had developed, but they
+                no longer had room for another partner.</para>
             <para dir="ltr">It took me weeks and a good lawyer to force myself into a partner
-                agreement.</para>
-            <para dir="ltr">Then it took me weeks to replace the crawler with a service that
+                agreement. Then it took me weeks to replace the crawler with a service that
                 communicated with the API.</para>
             <para dir="ltr">During that period I lost half of the subscribers to a service that was
                 supposed to update at least weekly.</para>
