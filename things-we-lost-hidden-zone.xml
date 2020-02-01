@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.0/rng/docbook.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<article xmlns="http://docbook.org/ns/docbook"
+        xmlns:xi="http://www.w3.org/2001/XInclude"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+    <info>
+        <title>Things We Lost in the Fire</title>
+        <author>
+            <personname><firstname>Geert</firstname><surname>Bormans</surname></personname>
+        </author>
+        <author>
+            <personname><firstname>Ari</firstname><surname>Nordström</surname></personname>
+        </author>
+    </info>
+    <section xml:id="stakeholders-view" >
+        <title>Project stakeholders view</title>
+        <!--Geert's Venn diagram-->
+        <figure>
+            <title>That Basic Venn Diagram</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="img/venn.jpg"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>If you're one of us - a grumpy old man, basically<footnote>
+            <para>No harm in being a grumpy old woman here.</para>
+        </footnote>, with some years of angled brackets under your belt - you will recognise
+            this diagram, nodding and bitterly thinking back in time. You will have had many
+            experiences relating directly to this simple diagram. Memories.</para>
+        <para>This is a paper about those memories. We'll go through some of
+            <emphasis>our</emphasis> memories, reliving the key points, bitching about what we
+            went through while thinking - hoping, even - that you'll be nodding right along with
+            us.</para>
+    </section>
+ 
+</article>
