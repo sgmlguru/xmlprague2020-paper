@@ -311,7 +311,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                     XSD was never meant to be included in the solution</emphasis>.</para>
         </section>
         <section>
-            <title>The Return of the Strict DTD</title>
+            <title>'oy' DaSIQjaj<footnote>
+                    <para>Klingon for <quote>May you endure the pain</quote>.</para>
+                </footnote></title>
             <para>Remember that Strict DTD? It was meant to do both the work of a DTD and what you'd
                 normally entrust Schematrons and style guides with, but the project was also very
                 much about office politics. <!--The procedure went something like this:--></para>
