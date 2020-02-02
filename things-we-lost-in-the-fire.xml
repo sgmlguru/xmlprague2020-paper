@@ -24,10 +24,8 @@
     </section>
     <section>
         <title>Religion</title>
-        <para>TBA</para>
         <section>
             <title>Programming Languages as Religion</title>
-            <!--Religious about a programming language-->
             <para dir="ltr">Being too religious about a programming language or a vocabulary does
                 not always help a project.</para>
             <para dir="ltr">Some years ago I held a workshop after the audit of an XML
@@ -53,7 +51,6 @@
         </section>
         <section>
             <title>The Strict DTD</title>
-            <!--Strict DTDs-->
             <para dir="ltr">I wrote a set of DTDs and a bunch of transformation pipelines for a
                 client that was merging their content with another company’s (as in actually merging
                 two sets of documents with the same text but with differing tagging). Among the DTDs

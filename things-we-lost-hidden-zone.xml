@@ -14,19 +14,18 @@
     </info>
     <section xml:id="stakeholders-view">
         <title>Memories</title>
-        <!--Geert's Venn diagram-->
-        <para>Bitching about our projects, we came to realize that all projects seem to follow a
-            similar pattern. Higly simplified, this pattern can be explained through the below
-            diagram.</para>
-        <para>If we reduce the number of stakeholders in a project to three only, one can state that
-            there is always someone (or a team) in power, a team doing the technical work and
-            consultant either providing advice or helping development.</para>
-        <para>All these stakeholders have a certain view on the project: where the resource should
-            go, what technology or approach should be used and what the best route to success would
-            be. Obviously the project's succes would depend on the large space where views
+        <para>Bitching about our projects, we came to realise that many of our projects follow a
+            pattern. This pattern can be illustrated through the diagram below.</para>
+        <para>If we reduce the number of stakeholders in a project to three, there seems always to
+            be someone (or a team) in power, a team doing the technical work, and a consultant
+            either providing advice or helping development.</para>
+        <para>All three stakeholders have a certain view on the project: where the resources should
+            go, what technology or approach should be used, and what the best route to success
+            should be. Obviously the project's succes would depend on the space where views
             meet.</para>
-        <para>However we came to the conclusion that this zone of succes, for various undefined
-            reasons, often is a "hidden zone" or even a "forbidden zone".</para>
+        <para>However we cme to the conclusion that this zone of succes, for various undefined
+            reasons, often is a <quote>hidden zone</quote> or even a <quote>forbidden
+            zone</quote>.</para>
         <figure>
             <title>That Basic Venn Diagram</title>
             <mediaobject>
@@ -38,11 +37,11 @@
         <para>If you're one of us - a grumpy old man, basically<footnote>
                 <para>No harm in being a grumpy old woman here.</para>
             </footnote>, with some years of angled brackets under your belt - you will recognise
-            this diagram, nodding and bitterly thinking back in time. You will have had many
-            experiences relating directly to this simple diagram. Memories.</para>
-        <para>This is a paper about those memories. We'll go through some of
+            this diagram, nodding and — perhaps — bitterly thinking back in time. You will have had
+            many experiences relating directly to this simple diagram. Memories.</para>
+        <para>This is a paper about those memories. We'll tell you about some of
                 <emphasis>our</emphasis> memories, reliving the key points, bitching about what we
-            went through while thinking - hoping, even - that you'll be nodding right along with
+            went through while thinking — hoping, even — that you'll be nodding right along with
             us.</para>
     </section>
 
