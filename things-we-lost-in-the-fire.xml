@@ -12,6 +12,32 @@
         <author>
             <personname><firstname>Ari</firstname><surname>Nordström</surname></personname>
         </author>
+        <abstract>
+            <para>This is about all those markup consulting projects where you realise that
+                something isn't quite as it should be. Early on, your internal alarm bells are set
+                off by a technology choice, legacy systems or processes, or maybe internal
+                conflicts, and you realise there are some hard decisions to make. Yes, you have
+                bills to pay but is this one of those projects you should stay away from... or have
+                stayed away from in the first place?</para>
+            <para>For example, what if you realise that your project was never meant to succeed?
+                What if a legacy system stands in the way of your every deliverable but is regarded
+                as untouchable? And what if you've been brought in to solve pressing and immediate
+                problems but office politics, legacy systems, fundamental misconceptions or all of
+                the above stand in your way? What if the team's skill set would be a trigger to
+                obstruction and sabotage? What if people were losing their jobs if you were
+                successful? Or maybe it's simply a disruptive atmosphere and more than anything it's
+                all about breaking through that.</para>
+            <para>We take a hard look at past projects and try to analyse what went wrong and why,
+                and what we learned from them. Perhaps we can impart some degree of objectivity on a
+                novice in the field, or at least have him or her think again. If there is success -
+                flipping adversity into success - we’ll be more than happy to claim credit.</para>
+            <para>While the stories are unlikely to be impartially presented, the names of the
+                innocent (and not-so innocent) will be protected. We will instead focus on
+                distilling the essence of each story and consider patterns and common denominators
+                so we can learn from them. The listener will hopefully learn from our mistakes while
+                nodding in recognition - we do not claim uniqueness; if all else fails, we hope to
+                entertain.</para>
+        </abstract>
     </info>
     <section>
         <title>We Call Ourselves Grumpy Old Men</title>
@@ -111,7 +137,6 @@
             <para dir="ltr">And so they thought the natural progression from this state would be to
                 do those files in XML instead, because writing and translating saves a lot of money.
                 Right??</para>
-            <!--<para dir="ltr">This one, of course, is about fundamental misconceptions. Like in “WHAT?!?”</para>-->
         </section>
         <section>
             <title>The Strict DTD, Part 2</title>
@@ -185,7 +210,6 @@
         </section>
         <section>
             <title>The Build Is Green</title>
-            <!--Test driven dev and green builds-->
             <para dir="ltr">Speaking of agile development, in a project I once worked in there were
                 some trained <quote>scrum masters</quote> doing the Java development part of the
                 work. They were extremely keen on using all the techniques they learned in the
@@ -404,7 +428,6 @@
             <para>The system ended up costing about ten or fifteen times the budget, required a LOT
                 of bug fixing (the cost of which wasn't part of the inflated budget), but it's
                 supposedly still in use.</para>
-            <!--<para dir="ltr">So this story is all about disastrous decisions made for us regarding technology, but also about office politics (authors were powerful enough to refuse XML-based driver’s manuals, etc). I’d add this to “The Author Is King”.</para>-->
         </section>
     </section>
     <section>
@@ -419,7 +442,9 @@
                 described by them can be typed… just like before. In the end, I delivered a schema
                 that rather faithfully reproduced that old CBOL monster but with no additional
                 value.</para>
-            <!--<para dir="ltr">This is not about a legacy system as much as it is about a legacy mindset. I could have avoided the pain simply by asking <quote>what do you want to achieve with your new XSD?</quote>”</para>-->
+            <para dir="ltr">This is not about a legacy system as much as it is about a legacy
+                mindset. I could have avoided the pain simply by asking <quote>what do you want to
+                    achieve with your new XSD?</quote>”</para>
         </section>
         <section>
             <title>Latin 1 and Entitites</title>
@@ -445,7 +470,6 @@
             <para dir="ltr">One assumes that they’ll somehow incorporate Latin 1 and DTDs in it,
                 though, since while they’re always saying that they MUST move to Unicode and UTF-8,
                 everything else always comes first.</para>
-            <!--<para dir="ltr">This is an interesting one to categorise. It’s about technical debt being ignored again and again, of course, but it’s also about legacy systems and processes. The Oracle thing, with Omnimark and aging processes, is a big warning light, though, and if you see this kind of legacy system (as in “ancient”), it’s a tell-tale sign to run if this sort of thing bothers you.</para>-->
         </section>
     </section>
     <section>
@@ -477,11 +501,9 @@
                 project. I left the company not too long after. The thing they ended up building was
                 an absolute disaster that was eventually settled in court while the client bought a
                 competitor’s product instead.</para>
-            <!--<para dir="ltr">This one is about ignoring the customer’s needs while betting on new technology because it’s new and therefore the best. So religious reasons, really.</para>-->
         </section>
         <section>
             <title>Sometimes Word Is What You Want</title>
-            <!--Authoring in Word is right, of course-->
             <para dir="ltr">Most legal publisher use Word in one way or another. I worked with one
                 that published Precedents document templates for lawyers in Word format, in spite of
                 the Word files actually being produced in XML, added some intricate and very clever
