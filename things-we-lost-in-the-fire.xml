@@ -31,61 +31,54 @@
                 and what we learned from them. Perhaps we can impart some degree of objectivity on a
                 novice in the field, or at least have him or her think again. If there is success -
                 flipping adversity into success - we’ll be more than happy to claim credit.</para>
-            <para>While the stories are unlikely to be impartially presented, the names of the
-                innocent (and not-so innocent) will be protected. We will instead focus on
-                distilling the essence of each story and consider patterns and common denominators
-                so we can learn from them. The listener will hopefully learn from our mistakes while
-                nodding in recognition - we do not claim uniqueness;
-                <?oxy_comment_start author="C-Moria" timestamp="20200202T195134+0100" comment="I like the fact that the extended abstract we sent in is used here to introduce the paper. I am however not certain about this final paragraph. The &quot;we hpe to entertain&quot; is a suggestion fro wahtw e had in mind for the presentation. Only one paragraph later we hint again to &quot;a few laughs&quot; Maybe that is a bit too much hinting to being funny"?>if
-                all else fails, we hope to entertain.<?oxy_comment_end?></para>
+            <!--<para>While the stories are unlikely to be impartially presented, the names of the innocent (and not-so innocent) will be protected. We will instead focus on distilling the essence of each story and consider patterns and common denominators so we can learn from them. The listener will hopefully learn from our mistakes while nodding in recognition - we do not claim uniqueness; <?oxy_comment_start author="C-Moria" timestamp="20200202T195134+0100" comment="I like the fact that the extended abstract we sent in is used here to introduce the paper. I am however not certain about this final paragraph. The &quot;we hpe to entertain&quot; is a suggestion fro wahtw e had in mind for the presentation. Only one paragraph later we hint again to &quot;a few laughs&quot; Maybe that is a bit too much hinting to being funny"?>if all else fails, we hope to entertain.<?oxy_comment_end?></para>-->
         </abstract>
     </info>
     <section>
         <title>We Call Ourselves Grumpy Old Men</title>
-        <para>Let us introduce ourselves. We're a pair of somewhat aged markup
-            geeks<?oxy_comment_start author="C-Moria" timestamp="20200202T195202+0100" comment="Break this sentence here maybe"?>,
-            <?oxy_comment_end?>having worked in the field for some 50 years combined, a lot of which
-            was spent bitching about what had already been. This is not the paper that will reveal
-            all. However, it is the paper that will discuss some of the implications of those 50
-            years.</para>
+        <para>Let us introduce ourselves. We're a pair of somewhat aged markup geeks with a combined
+            50 years between ourselves<footnote>
+                <para>A lot of which was spent bitching about what had already been.</para>
+            </footnote>. This is not the paper that will reveal all. However, it is the paper that
+            will discuss some of the implications of those 50 years.</para>
         <para>Or at least have a few laughs while reminiscing.</para>
-        <section xml:id="stakeholders-view">
-            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T195401+0100" comment="I added a section to have a single Xinclude identifier. In its context, I think the content of this section can be pulled in the main section... would be one less title (and maybe a better flow
-"?>Memories<?oxy_comment_end?></title>
-            <para>Bitching about our projects, we came to realise that many of our projects follow a
-                pattern. This pattern can be illustrated through the diagram below.</para>
-            <para>If we would reduce the number of stakeholders in a project to three, there seems
-                always to be someone (or a team) in power, a team doing the technical work, and a
-                consultant either providing advice or assisting development.</para>
-            <para>All three stakeholders have a certain view on the project: where the resources
-                should go, what technology or approach should be used, and what the best route to
-                success would be. Obviously the project's succes would depend on the space where all
-                views meet.</para>
-            <para>However we came to the conclusion that this zone of succes, for various undefined
-                reasons, often is a <quote>hidden zone</quote> or even a <quote>forbidden
-                    zone</quote>.</para>
-            <figure>
-                <title>That Basic Venn Diagram</title>
-                <mediaobject>
-                    <imageobject>
-                        <imagedata fileref="img/Hidden-zone.jpg"/>
-                    </imageobject>
-                </mediaobject>
-            </figure>
-            <para>If you're one of us - a grumpy old man, basically<footnote>
-                    <para>No harm in being a grumpy old woman here.</para>
-                </footnote>, with some years of angled brackets under your belt - you will recognise
-                this diagram, nodding and — perhaps — bitterly thinking back in time. You will have
-                had many experiences relating directly to this simple diagram. Memories.</para>
-            <para>This is a paper about those memories. We'll tell you about some of
-                    <emphasis>our</emphasis> memories, reliving the key points, bitching about what
-                we went through while thinking — hoping, even — that you'll be nodding right along
-                with us.</para>
-        </section>
+    
+        <!--<title><?oxy_comment_start author="C-Moria" timestamp="20200202T195401+0100" comment="I added a section to have a single Xinclude identifier. In its context, I think the content of this section can be pulled in the main section... would be one less title (and maybe a better flow
+"?>Memories<?oxy_comment_end?></title>-->
+        <para>Bitching about our projects, we came to realise that many of our projects follow a
+            pattern. This pattern can be illustrated through the diagram below.</para>
+        <para>If we would reduce the number of stakeholders in a project to three, there seems
+            always to be someone (or a team) in power, a team doing the technical work, and a
+            consultant either providing advice or assisting development.</para>
+        <para>All three stakeholders have a certain view on the project: where the resources
+            should go, what technology or approach should be used, and what the best route to
+            success would be. Obviously the project's succes would depend on the space where all
+            views meet.</para>
+        <para>However we came to the conclusion that this zone of succes, for various undefined
+            reasons, often is a <quote>hidden zone</quote> or even a <quote>forbidden
+                zone</quote>.</para>
+        <figure>
+            <title>That Basic Venn Diagram</title>
+            <mediaobject>
+                <imageobject>
+                    <imagedata fileref="img/Hidden-zone.jpg"/>
+                </imageobject>
+            </mediaobject>
+        </figure>
+        <para>If you're one of us - a grumpy old man, basically<footnote>
+                <para>No harm in being a grumpy old woman here.</para>
+            </footnote>, with some years of angled brackets under your belt - you will recognise
+            this diagram, nodding and — perhaps — bitterly thinking back in time. You will have
+            had many experiences relating directly to this simple diagram. Memories.</para>
+        <para>This is a paper about those memories. We'll tell you about some of
+                <emphasis>our</emphasis> memories, reliving the key points, bitching about what
+            we went through while thinking — hoping, even — that you'll be nodding right along
+            with us.</para>
+        
     </section>
     
     <section>
-        <title>Matches</title>
+        <title>The Things That Lit the Matches</title>
         <!--<title><?oxy_comment_start author="C-Moria" timestamp="20200202T200151+0100" comment="I think I understand what you mean. I think we can drop the &quot;Religion&quot; level titles. Grouping could be implicit... I agree they could go
 
 What if we did this:
@@ -97,7 +90,7 @@ here go all the stories with subsection titles
 section 3 &quot;Things we found in the ashes&quot;
 here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
         <section>
-            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200215+0100" comment="however keeping these divisions"?>Programming<?oxy_comment_end?>
+            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200215+0100" comment="however keeping these divisions" flag="done"?>Programming<?oxy_comment_end?>
                 Languages as Religion</title>
             <para dir="ltr">Being too religious about a programming language or a vocabulary does
                 not always help a project.</para>
@@ -154,13 +147,7 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 knowing what to do if the DTD doesn’t properly guide them.”</para>
             <para dir="ltr">I went through what’s normally my sales pitch about the usefulness and
                 adaptability of Schematron rules, and how they can help authors in ways DTDs cannot.
-                And thinking that I shouldn’t have to be doing this.
-                T<?oxy_comment_start author="C-Moria" timestamp="20200202T202155+0100" comment="maybe tone down the frustration ;-)... it is obvious this one is recent ;-)
-"?>hey
-                were devs, ferchrissakes. But they ins<?oxy_comment_end?>isted, stating that they
-                knew what Schematrons were and they did think they were useful, but... and they got
-                their boss (who wouldn’t know a Schematron even if one bit him) to back them
-                up.</para>
+                And thinking that I shouldn’t have to be doing this.</para>
             <para dir="ltr">Much later, I had a one-on-one with one of the devs and the conversation
                 drifted to Schematrons. And after some discussion, he finally said “Schematron is a
                 Java library, right?”</para>
@@ -187,16 +174,8 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 thought was great and really cost-saving because they’d then be able to use the same
                 ToCs and indexes regardless of language.</para>
             <para dir="ltr">And so they thought the natural progression from this state would be to
-                do those files in XML instead, because writing and translating saves a lot of money.
-                Right??</para>
-        </section>
-        <section>
-            <title>The Strict DTD, Part 2</title>
-            <para>The whole Strict DTD debacle was as much about misconceptions as it was about
-                religion, of course. The religion was in the magic of DTDs while the misconceptions
-                were about Schematrons. But the really worrying bits were all about them
-                    <emphasis>not knowing what Schematrons do but pretending they
-                did.</emphasis></para>
+                do those files in XML instead, because writing and translating is supposed to save a
+                lot of money. Right??</para>
         </section>
         <section>
             <title>We've Always Done This</title>
@@ -214,6 +193,8 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                     <code>heading4</code>. So the publisher started restyling all their content to
                 be in line with the contractors requirements... and gave up on that effort after
                 some 1,000 pages out of 200,000.</para>
+            <para>They realised it would take years just to update the legacy laws, and they would
+                never be able to publish new laws in time in the future.</para>
         </section>
         <section>
             <title>We've Always Done This, Part 2</title>
@@ -338,7 +319,7 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 everything is about office politics.</para>
         </section>
         <section>
-            <title>Strict DTD, Part 3</title>
+            <title>The Return of the Strict DTD</title>
             <para>Remember that Strict DTD? It was meant to do both the work of a DTD and what you'd
                 normally entrust Schematrons and style guides with, but the project was also very
                 much about office politics. The procedure went something like this:</para>
@@ -572,7 +553,7 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
         </section>
     </section>
     <section>
-        <title>Things We Found in the Ashes</title>
+        <title>Things We Found among the Ashes</title>
         <!--This is sort of like conclusions-->
         <para>It goes without saying. First rule of thumb: be pragmatic. Not only do you have to make
             a living. Sometimes you need to swallow your pride and go for the poor solution. Trying
