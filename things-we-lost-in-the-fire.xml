@@ -321,7 +321,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
             <para>They wouldn't give an inch on the strictness of that DTD. We couldn't tighten the
                 DTD because that would invalidate about 10,000 large legal documents.</para>
             <para>And then they decided the DTD must be in their local language rather than English,
-                which was the only language many of our devs understood.</para>
+                which was the only language many of our devs understood. I thought they might as
+                well do the DTD in Klingon, in that case, so very quietly I added several attributes
+                in Klingon. It took them a couple of months to spot them.</para>
             <para>As I write this, this was <quote>solved</quote> by introducing a black box that
                 translates XML between the DB storage format (<quote>loose DTD</quote>) and the
                 authoring format (the <quote>strict DTD</quote>), every time something needs to be
