@@ -413,16 +413,16 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
             </itemizedlist>
             <para dir="ltr">Let’s see. No extended XLink (because of no way to properly handle
                 out-of-line lookups in the editor OR the DB). No inline <code>CDATA</code>-based
-                links either (because editor [X] did not do them). Which meant generating
+                links either (because the editor did not do them). Which meant generating
                     <code>ID/IDREF</code> pairs in a really mad process whenever handling the
                 information, plus a LOT of other compromises.</para>
-            <para dir="ltr">The new system (based on [Y]) was added a document management layer that
-                required horrible processing attributes on many elements (this is how we found out
-                that editor [X]'s parser at the time included a hard 8,000-character attribute
-                length limit). The first login in test took about 30 minutes. In the words of the
-                software architect: <quote>This could have been a really fast system without
-                    [Y].</quote> I said something in a similar vein about [X], and the guy who did
-                most of the formatting cursed about [Z].</para>
+            <para dir="ltr">The new system was added a document management layer that required
+                horrible processing attributes on many elements (this is how we found out that the
+                editor's parser at the time included a hard 8,000-character attribute length limit).
+                The first login in test took about 30 minutes. In the words of the software
+                architect: <quote>This could have been a really fast system without [Y].</quote> I
+                said something in a similar vein about [X], and the guy who did most of the
+                formatting cursed about [Z].</para>
             <para>The system ended up costing about ten or fifteen times the budget, required a LOT
                 of bug fixing (the cost of which wasn't part of the inflated budget), but it's
                 supposedly still in use.</para>
