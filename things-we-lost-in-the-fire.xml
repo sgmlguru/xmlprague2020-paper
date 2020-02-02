@@ -46,7 +46,38 @@
             had already been. This is not the paper that will reveal all. However, it is the paper
             that will discuss some of the implications of those 50 years.</para>
         <para>Or at least have a few laughs while reminiscing.</para>
-        <xi:include href="things-we-lost-hidden-zone.xml" xpointer="stakeholders-view"/>
+        <section xml:id="stakeholders-view">
+            <title>Memories</title>
+            <para>Bitching about our projects, we came to realise that many of our projects follow a
+                pattern. This pattern can be illustrated through the diagram below.</para>
+            <para>If we reduce the number of stakeholders in a project to three, there seems always
+                to be someone (or a team) in power, a team doing the technical work, and a
+                consultant either providing advice or helping development.</para>
+            <para>All three stakeholders have a certain view on the project: where the resources
+                should go, what technology or approach should be used, and what the best route to
+                success should be. Obviously the project's succes would depend on the space where
+                views meet.</para>
+            <para>However we cme to the conclusion that this zone of succes, for various undefined
+                reasons, often is a <quote>hidden zone</quote> or even a <quote>forbidden
+                    zone</quote>.</para>
+            <figure>
+                <title>That Basic Venn Diagram</title>
+                <mediaobject>
+                    <imageobject>
+                        <imagedata fileref="img/Hidden-zone.jpg"/>
+                    </imageobject>
+                </mediaobject>
+            </figure>
+            <para>If you're one of us - a grumpy old man, basically<footnote>
+                    <para>No harm in being a grumpy old woman here.</para>
+                </footnote>, with some years of angled brackets under your belt - you will recognise
+                this diagram, nodding and — perhaps — bitterly thinking back in time. You will have
+                had many experiences relating directly to this simple diagram. Memories.</para>
+            <para>This is a paper about those memories. We'll tell you about some of
+                    <emphasis>our</emphasis> memories, reliving the key points, bitching about what
+                we went through while thinking — hoping, even — that you'll be nodding right along
+                with us.</para>
+        </section>
     </section>
     <section>
         <title>Religion</title>
