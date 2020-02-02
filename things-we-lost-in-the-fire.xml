@@ -35,29 +35,33 @@
                 innocent (and not-so innocent) will be protected. We will instead focus on
                 distilling the essence of each story and consider patterns and common denominators
                 so we can learn from them. The listener will hopefully learn from our mistakes while
-                nodding in recognition - we do not claim uniqueness; if all else fails, we hope to
-                entertain.</para>
+                nodding in recognition - we do not claim uniqueness;
+                <?oxy_comment_start author="C-Moria" timestamp="20200202T195134+0100" comment="I like the fact that the extended abstract we sent in is used here to introduce the paper. I am however not certain about this final paragraph. The &quot;we hpe to entertain&quot; is a suggestion fro wahtw e had in mind for the presentation. Only one paragraph later we hint again to &quot;a few laughs&quot; Maybe that is a bit too much hinting to being funny"?>if
+                all else fails, we hope to entertain.<?oxy_comment_end?></para>
         </abstract>
     </info>
     <section>
         <title>We Call Ourselves Grumpy Old Men</title>
-        <para>Let us introduce ourselves. We're a pair of somewhat aged markup geeks, having worked
-            in the field for some 50 years combined, a lot of which was spent bitching about what
-            had already been. This is not the paper that will reveal all. However, it is the paper
-            that will discuss some of the implications of those 50 years.</para>
+        <para>Let us introduce ourselves. We're a pair of somewhat aged markup
+            geeks<?oxy_comment_start author="C-Moria" timestamp="20200202T195202+0100" comment="Break this sentence here maybe"?>,
+            <?oxy_comment_end?>having worked in the field for some 50 years combined, a lot of which
+            was spent bitching about what had already been. This is not the paper that will reveal
+            all. However, it is the paper that will discuss some of the implications of those 50
+            years.</para>
         <para>Or at least have a few laughs while reminiscing.</para>
         <section xml:id="stakeholders-view">
-            <title>Memories</title>
+            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T195401+0100" comment="I added a section to have a single Xinclude identifier. In its context, I think the content of this section can be pulled in the main section... would be one less title (and maybe a better flow
+"?>Memories<?oxy_comment_end?></title>
             <para>Bitching about our projects, we came to realise that many of our projects follow a
                 pattern. This pattern can be illustrated through the diagram below.</para>
-            <para>If we reduce the number of stakeholders in a project to three, there seems always
-                to be someone (or a team) in power, a team doing the technical work, and a
-                consultant either providing advice or helping development.</para>
+            <para>If we would reduce the number of stakeholders in a project to three, there seems
+                always to be someone (or a team) in power, a team doing the technical work, and a
+                consultant either providing advice or assisting development.</para>
             <para>All three stakeholders have a certain view on the project: where the resources
                 should go, what technology or approach should be used, and what the best route to
-                success should be. Obviously the project's succes would depend on the space where
+                success would be. Obviously the project's succes would depend on the space where all
                 views meet.</para>
-            <para>However we cme to the conclusion that this zone of succes, for various undefined
+            <para>However we came to the conclusion that this zone of succes, for various undefined
                 reasons, often is a <quote>hidden zone</quote> or even a <quote>forbidden
                     zone</quote>.</para>
             <figure>
@@ -80,9 +84,19 @@
         </section>
     </section>
     <section>
-        <title>Religion</title>
+        <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200151+0100" comment="I think I understand what you mean. I think we can drop the &quot;Religion&quot; level titles. Grouping could be implicit... I agree they could go
+
+What if we did this:
+Paper title: &quot;Things we lost in the fire&quot;
+section1 &quot;We call ourselves Grumpy Old Men&quot;
+here goes introduction
+section 2 &quot;Things that ignited the sparks&quot;
+here go all the stories with subsection titles
+section 3 &quot;Things we found in the ashes&quot;
+here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
         <section>
-            <title>Programming Languages as Religion</title>
+            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200215+0100" comment="however keeping these divisions"?>Programming<?oxy_comment_end?>
+                Languages as Religion</title>
             <para dir="ltr">Being too religious about a programming language or a vocabulary does
                 not always help a project.</para>
             <para dir="ltr">Some years ago I held a workshop after the audit of an XML
