@@ -95,7 +95,6 @@
     </section>
     <section>
         <title>Misconceptions</title>
-        <para>TBA</para>
         <section>
             <title>Page by Page</title>
             <para dir="ltr">I was tasked with collecting requirements from a number of companies
@@ -119,7 +118,6 @@
         </section>
         <section>
             <title>The Strict DTD, Part 2</title>
-            <!--(Comment about Strict DTDs (more powerful than you think)-->
             <para>The whole Strict DTD debacle was as much about misconceptions as it was about
                 religion, of course. The religion was in the magic of DTDs while the misconceptions
                 were about Schematrons. But the really worrying bits were all about them
@@ -128,51 +126,48 @@
         </section>
         <section>
             <title>We've Always Done This</title>
-            <!--Legal docs, DITA OT stories-->
             <para dir="ltr">Recently I developed (yet another) MS Word transformer to XML. Yes,
                 customers do use MS Word for XML authoring.</para>
             <para dir="ltr">I was called in because a first attempt had failed over the past few
                 years.</para>
             <para dir="ltr">This story is about legal publishing. Some acts have books, chapters and
-                sections other acts just have chapters other have even deeper nesting.</para>
-            <para dir="ltr">The information model cares for all of that.</para>
+                sections, others just have chapters, and yet others have deeper nesting. The
+                information model caters for all of that.</para>
             <para dir="ltr">The contractor had told the publisher that it was impossible to
-                differentiate between a chapter in one document or the other</para>
-            <para dir="ltr">if chapters would not always be styled reliably on the same
-                level.</para>
-            <para dir="ltr">The project could only be successful if chapters were always styled
-                "heading3", sections always "heading4" (as an example).</para>
-            <para dir="ltr">So the publisher started restyling all their content to be in line with
-                the contractors requirements... and gave on that effort after some 1000 pages out
-                200000...</para>
+                differentiate between a chapter in one document or another if chapters would not
+                always be styled reliably on the same level. For example, the project could only be
+                successful if chapters were always styled as <code>heading3</code> and sections as
+                    <code>heading4</code>. So the publisher started restyling all their content to
+                be in line with the contractors requirements... and gave up on that effort after
+                some 1,000 pages out of 200,000.</para>
+        </section>
+        <section>
+            <title>We've Always Done This, Part 2</title>
             <para dir="ltr">I inherited the stylesheet development work of an old DITA OT project in
-                the automotive industry for print and HTML.</para>
-            <para dir="ltr">Challenging, quite a few car types, over 20 languages including Hebrew
-                and Arab.</para>
-            <para dir="ltr">For some years the information architect of my contractor had made every
-                suggestion of the car manufacturer on the printed pages into a task for stylesheet
-                development.</para>
-            <para dir="ltr">The reviewers of the printed manuals at the site of the car manufacturer
-                all had different ideas, sometimes conflicting,</para>
-            <para dir="ltr">and the response of the information architect had always been to mandate
-                exceptions fixed in the stylesheet.</para>
-            <para dir="ltr">It had never occurred to them to fix things in the actual DITA
-                content... except adding yet another outputclass once in a while.</para>
-            <para dir="ltr">There was a continuous pressure of publishing, one car type after the
-                other, one language after the other, each one leading to incremental changes to the
-                stylesheets,</para>
-            <para dir="ltr">causing awful delays in delivery of printed manuals.</para>
-            <para dir="ltr">The DITA OT developer had indicated he no longer had the time to respond
-                to all the work coming in.</para>
+                the automotive industry for print and HTML. Challenging, quite a few car types, over
+                20 languages including Hebrew and Arab.</para>
+            <para dir="ltr">For some years by the time I joined, the information architect had
+                defined every suggestion from the car manufacturer about the printed pages into
+                separate tasks for stylesheet development. The reviewers of those printed manuals
+                all had different ideas, sometimes conflicting, and the response of the information
+                architect had always been to allow for exceptions to be fixed in the
+                stylesheets.</para>
+            <para dir="ltr">It had never occurred to them to fix anything in the actual DITA
+                content, except to add another output class every once in a while.</para>
+            <para dir="ltr">There was a continuous pressure to publish, one car model after another,
+                one language after another, each one leading to incremental changes to the
+                stylesheets, causing massive delays in delivering the printed manuals. The DITA OT
+                developer had indicated he no longer had the time to handle all the work coming
+                in.</para>
             <para dir="ltr">So I was hired for some smaller development tasks and inherited a code
-                base that had more xsl:if and xsl:when clauses then it had templates.</para>
-            <para dir="ltr">I slowly started changing the mentality from fix-in-stylesheets (one
-                part time developer) to fix-in-content (5 full time editors) but never managed to
-                change course on time.</para>
+                base that had more <code>xsl:if</code> and <code>xsl:when</code> clauses then it had
+                templates. I slowly started changing the mentality from fix-in-stylesheets (one part
+                time developer) to fix-in-content (5 full time editors) but never managed to change
+                course in time.</para>
             <para dir="ltr">Eventually my contractor lost his contract because of the delays.</para>
-            <para dir="ltr">Same contractor then got the brilliant idea to start using their
-                expertise and use DITA for a legal content publishing project. I politely passed on
-                that one.</para>
+            <para dir="ltr">The same contractor then got the brilliant idea to start using their
+                expertise and DITA for a legal content publishing project. I politely passed on that
+                one.</para>
         </section>
     </section>
     <section>
@@ -212,7 +207,6 @@
         </section>
         <section>
             <title>Make It Better</title>
-            <!--Working through the codebase and make it better.-->
             <para dir="ltr">We do often get so focused on the technical aspects of a task that we
                 forget about the legacy or the team.</para>
             <para dir="ltr">In a very recent gig the task was very clear: work through the codebase
@@ -272,38 +266,42 @@
         </section>
         <section>
             <title>Strict DTD, Part 3</title>
-            <!--Comment about what the Strict DTD led to (a black box that translated between an authoring DTD and a production DTD for no good reason)-->
-            <para>That Strict DTD meant to do what you'd normally entrust Schematrons and style
-                guides with also came to be about office politics. The procedure was something like
-                this:</para>
+            <para>Remember that Strict DTD? It was meant to do both the work of a DTD and what you'd
+                normally entrust Schematrons and style guides with, but the project was also very
+                much about office politics. The procedure went something like this:</para>
             <orderedlist>
                 <listitem>
-                    <para><quote>We want our strict DTD!</quote></para>
-                    <para><quote>It will make thousands of documents invalid. We can't do it. Use a
-                            bloody Schematron instead!</quote></para>
+                    <para>Them: <quote>We want our strict DTD!</quote></para>
+                    <para>Us: <quote>It will make thousands of documents invalid. We can't do it.
+                            Use a bloody Schematron instead!</quote></para>
                 </listitem>
                 <listitem>
-                    <para><quote>We also want to use language X rather than English!</quote></para>
-                    <para><quote>How's that going to work with all of our non-X
-                        developers?</quote></para>
-                    <para><quote>We'll write instructions!</quote></para>
-                    <para><quote>Sorry, we might as well do the DTD in Klingon!<footnote>
+                    <para>Them: <quote>We also want to use language X rather than
+                        English!</quote></para>
+                    <para>Us: <quote>How's that going to work with all of our non-X
+                            developers?</quote></para>
+                    <para>Them: <quote>We'll write instructions!</quote></para>
+                    <para>Us: <quote>Sorry, we might as well do the DTD in Klingon!<footnote>
                                 <para>Which is what I did, for a select number of attributes. It
                                     took them about two months or so to spot it.</para>
                             </footnote></quote></para>
                 </listitem>
                 <listitem>
+                    <para>Them: </para>
                     <para>(Office politics happens.)</para>
                 </listitem>
                 <listitem>
+                    <para>Us: </para>
                     <para><quote>Let's do a black-box solution that translates between the Strict
                             DTD (for authoring) and the sensible DTD/Schematron combo that doesn't
-                            wreck anything!</quote> (Suggested by my team leader.)</para>
+                            wreck anything!</quote> (Suggested and implemented by my team
+                        leader.)</para>
                 </listitem>
             </orderedlist>
-            <para>So #5 is what happened. As I write this, they have an actual black box thing that
-                translates XML between the DB storage format and the authoring format. And the two
-                are <emphasis>not</emphasis> fully compatible.</para>
+            <para>As I write this, they have an actual black box thing that translates XML between
+                the DB storage format and the authoring format. And the two are
+                    <emphasis>not</emphasis> fully compatible so there are a lot of problems each
+                way and more being discovered every day.</para>
         </section>
     </section>
     <section>
@@ -330,7 +328,6 @@
         </section>
         <section>
             <title>Old Software</title>
-            <!--DITA OT and a 10 yo XSLT2 processor-->
             <para dir="ltr">Speaking of licensed software, I had to work around missing
                 functionality doing XSLT development in the DITA Open Toolkit a number of times,
                 simply because it came bundled with a 10 year-old XSLT2.0 processor. That seemed to
@@ -341,7 +338,6 @@
         </section>
         <section>
             <title>Subscription Services</title>
-            <!--Web crawler replaced by API-->
             <para dir="ltr">I am running a subscription service providing some transformed data in
                 specific formats to subscribers. However I am getting the actual information for
                 this service from crawling databases via a web interface. This is all nicely covered
@@ -426,9 +422,7 @@
                 described by them can be typed… just like before. In the end, I delivered a schema
                 that rather faithfully reproduced that old CBOL monster but with no additional
                 value.</para>
-            <para dir="ltr">This is not about a legacy system as much as it is about a legacy
-                mindset. I could have avoided the pain simply by asking <quote>what do you want to
-                    achieve with your new XSD?</quote>”</para>
+            <!--<para dir="ltr">This is not about a legacy system as much as it is about a legacy mindset. I could have avoided the pain simply by asking <quote>what do you want to achieve with your new XSD?</quote>”</para>-->
         </section>
         <section>
             <title>Latin 1 and Entitites</title>
@@ -496,14 +490,16 @@
                 the Word files actually being produced in XML, added some intricate and very clever
                 tagging, and then converted to Word. As an XML geek, I was dead against this, of
                 course. Word seemed like an unnecessary extra layer.</para>
-            <para dir="ltr">But when I really thought about it, I realised how wrong I was: the end
-                users are non-technical lawyers and it would be a lot more complex (technically and
-                politically) to get them to use an XML tool. Sometimes MS Word is what you really
-                want.</para>
+            <para dir="ltr">But when I put aside my pride and supposed XML competence, and really
+                started thinking about the process, I realised how wrong I was: the end users are
+                non-technical lawyers and it would be a lot more complex (technically and
+                politically) to get them to use an XML tool, regardless of all the cool things we
+                could do the make life easier for them.</para>
+            <para dir="ltr">Sometimes MS Word is what you really want.</para>
         </section>
     </section>
     <section>
-        <title>Wisdom - Things we found in the ashes</title>
+        <title>Wisdom - Things We Found in the Ashes</title>
         <!--This is sort of like conclusions-->
         <para>It goes without saying. First rule of thumb: be pragmatic. Not only do you have to make
             a living. Sometimes you need to swallow your pride and go for the poor solution. Trying
@@ -551,7 +547,7 @@
             projects simply fail. Because of you or despite of you.</para>
         <para dir="ltr">We are all very proud people. Yet, there is no shame in admitting that one
             project or another has failed... and that you might have played a role in that failure.
-            Maybe you did not push enough for a change, maybe you did not pay attention, ...</para>
-        <para>TBA?</para>
+            Maybe you did not push enough for a change, maybe you did not pay attention. Maybe you
+            (shudder) were wrong.</para>
     </section>
 </article>
