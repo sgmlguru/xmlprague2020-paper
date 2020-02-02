@@ -83,8 +83,10 @@
                 with us.</para>
         </section>
     </section>
+    
     <section>
-        <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200151+0100" comment="I think I understand what you mean. I think we can drop the &quot;Religion&quot; level titles. Grouping could be implicit... I agree they could go
+        <title>Matches</title>
+        <!--<title><?oxy_comment_start author="C-Moria" timestamp="20200202T200151+0100" comment="I think I understand what you mean. I think we can drop the &quot;Religion&quot; level titles. Grouping could be implicit... I agree they could go
 
 What if we did this:
 Paper title: &quot;Things we lost in the fire&quot;
@@ -93,7 +95,7 @@ here goes introduction
 section 2 &quot;Things that ignited the sparks&quot;
 here go all the stories with subsection titles
 section 3 &quot;Things we found in the ashes&quot;
-here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
+here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
         <section>
             <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200215+0100" comment="however keeping these divisions"?>Programming<?oxy_comment_end?>
                 Languages as Religion</title>
@@ -160,9 +162,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
             <para dir="ltr">This is about pride and firmly set beliefs. And it’s also about devs
                 with too much power.</para>
         </section>
-    </section>
-    <section>
-        <title>Misconceptions</title>
+    
+    
+        <!--<title>Misconceptions</title>-->
         <section>
             <title>Page by Page</title>
             <para dir="ltr">I was tasked with collecting requirements from a number of companies
@@ -236,9 +238,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
                 expertise and DITA for a legal content publishing project. I politely passed on that
                 one.</para>
         </section>
-    </section>
-    <section>
-        <title>Teams</title>
+    
+    
+        <!--<title>Teams</title>-->
         <section>
             <title>90-minute Standups</title>
             <para dir="ltr">In the early days of using agile development methods, I worked half time
@@ -289,9 +291,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
             <para dir="ltr">It is all so obvious after the facts, but t taught me to have even more
                 attention for the different sensitivities in a team.</para>
         </section>
-    </section>
-    <section>
-        <title>Office Politics</title>
+    
+    
+        <!--<title>Office Politics</title>-->
         <section>
             <title>An XSD for Appearances</title>
             <para dir="ltr">I was tasked with designing an XSD for a client. The XSD was supposedly
@@ -369,9 +371,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
                     <emphasis>not</emphasis> fully compatible so there are a lot of problems each
                 way and more being discovered every day.</para>
         </section>
-    </section>
-    <section>
-        <title>Software</title>
+    
+    
+        <!--<title>Software</title>-->
         <section>
             <title>Open Source as Policy</title>
             <para dir="ltr">Around 20 years ago, a publisher invited me to look into the publication
@@ -474,9 +476,9 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
                 of bug fixing (the cost of which wasn't part of the inflated budget), but it's
                 supposedly still in use.</para>
         </section>
-    </section>
-    <section>
-        <title>Legacy</title>
+    
+    
+        <!--<title>Legacy</title>-->
         <section>
             <title>Those Were the Days</title>
             <para dir="ltr">I was tasked with writing an XSD for a company that wanted to move away
@@ -517,6 +519,8 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>
                 everything else always comes first.</para>
         </section>
     </section>
+    
+    
     <section>
         <title>Opposing Views</title>
         <section>
