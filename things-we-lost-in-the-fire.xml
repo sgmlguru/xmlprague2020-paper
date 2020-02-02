@@ -428,7 +428,7 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 supposedly still in use.</para>
         </section>
         <section>
-            <title>Not Pretty Enough</title>
+            <title>Not Hawt Enough</title>
             <para dir="ltr">By the way, that well-known automotive maker's technical writers were an
                 opinionated bunch. They had a look at the early output from formatting engine [Z]
                 and decided the driver’s manuals couldn't be done in XML because there would be
@@ -530,7 +530,6 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
     </section>
     <section>
         <title>Things We Found among the Ashes</title>
-        <!--This is sort of like conclusions-->
         <para>It goes without saying. First rule of thumb: be pragmatic. Not only do you have to make
             a living. Sometimes you need to swallow your pride and go for the poor solution. Trying
             to push the purist solution you know would work, might make you sleep better. But at the
