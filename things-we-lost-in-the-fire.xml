@@ -316,15 +316,15 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 </footnote></title>
             <para>Remember that Strict DTD? It was meant to do both the work of a DTD and what you'd
                 normally entrust Schematrons and style guides with, but the project was also very
-                much about office politics. <!--The procedure went something like this:--></para>
+                much about office politics.</para>
             <para>They wouldn't give an inch on the strictness of that DTD. We couldn't tighten the
                 DTD because that would invalidate about 10,000 large legal documents.</para>
             <para>And then they decided the DTD must be in their local language rather than English,
                 which was the only language many of our devs understood. I thought they might as
                 well do the DTD in Klingon, in that case, so very quietly I added several attributes
                 in Klingon. It took them a couple of months to spot them.</para>
-            <para>As I write this, this was <quote>solved</quote> by introducing a black box that
-                translates XML between the DB storage format (<quote>loose DTD</quote>) and the
+            <para>As I write this, this has been <quote>solved</quote> by introducing a black box
+                that translates XML between the DB storage format (<quote>loose DTD</quote>) and the
                 authoring format (the <quote>strict DTD</quote>), every time something needs to be
                 edited. The two are <emphasis>not</emphasis> fully compatible so there are a lot of
                 problems and more being discovered every day.</para>
@@ -395,44 +395,48 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
             <para dir="ltr">This is when they came back with a bunch of requirements:</para>
             <itemizedlist>
                 <listitem dir="ltr">
-                    <para dir="ltr">You can choose any editor you want but it has to be Arbortext
-                        Epic</para>
+                    <para dir="ltr">You can choose any editor you want but it has to be [X].</para>
                 </listitem>
                 <listitem dir="ltr">
                     <para dir="ltr">You can choose any underlying DB you want but it all needs to be
-                        based on Documentum.</para>
+                        based on [Y].</para>
                 </listitem>
                 <listitem dir="ltr">
-                    <para dir="ltr">You really should use that new formatting engine Arbortext
-                        provides (but please use any standards you want). Was it called E3?</para>
+                    <para dir="ltr">You can choose any formatting engine you like but it has to be
+                        [Z] (but please use any standards you want).</para>
                 </listitem>
                 <listitem dir="ltr">
                     <para dir="ltr">Oh, and we need you to move all the old SGML stuff we have for
-                        service info, parts DB (COBOL!), and the like to the new system as well.
-                        Which means going from SGML to XML.</para>
+                        service info, a parts DB, and the like to the new system as well. Which
+                        means going from SGML to XML, migrating old DBs, etc.</para>
                 </listitem>
             </itemizedlist>
             <para dir="ltr">Let’s see. No extended XLink (because of no way to properly handle
                 out-of-line lookups in the editor OR the DB). No inline <code>CDATA</code>-based
-                links either (because Arbortext and FOSIs at the time did not do them).</para>
-            <para dir="ltr">Which meant generating <code>ID/IDREF</code> pairs in a really mad
-                process whenever handling the information, plus a LOT of other compromises.</para>
-            <para dir="ltr">They also decided the driver’s manuals couldn't be done in XML because
-                there would be compromises in the layout and the manuals need to look pretty. Never
-                mind that we go to 42 languages and by not using XML we add a 70% cost to every
-                single manual produced. PageMaker it is.</para>
-            <para dir="ltr">And no, let’s not do the accessory catalogues in XML either, for similar
-                reasons.</para>
-            <para dir="ltr">Documentum was added a DMS layer that required horrible processing
-                attributes on many elements (this is how we found out that Arbortext’s parser at the
-                time included a hard 8,000-character attribute length limit). The first login in
-                test took about 30 minutes. In the words of the software architect: <quote>This
-                    could have been a really fast system without Documentum.</quote> I said
-                something in a similar vein about Arbortext, and the guy who did most of the FOSIs
-                cursed about E3.</para>
+                links either (because editor [X] did not do them). Which meant generating
+                    <code>ID/IDREF</code> pairs in a really mad process whenever handling the
+                information, plus a LOT of other compromises.</para>
+            <para dir="ltr">The new system (based on [Y]) was added a document management layer that
+                required horrible processing attributes on many elements (this is how we found out
+                that editor [X]'s parser at the time included a hard 8,000-character attribute
+                length limit). The first login in test took about 30 minutes. In the words of the
+                software architect: <quote>This could have been a really fast system without
+                    [Y].</quote> I said something in a similar vein about [X], and the guy who did
+                most of the formatting cursed about [Z].</para>
             <para>The system ended up costing about ten or fifteen times the budget, required a LOT
                 of bug fixing (the cost of which wasn't part of the inflated budget), but it's
                 supposedly still in use.</para>
+        </section>
+        <section>
+            <title>You Can Choose Any Software You Want</title>
+            <para dir="ltr">By the way, that well-known automotive maker's technical writers were an
+                opinionated bunch. They had a look at the early output from formatting engine [Z]
+                and decided the driver’s manuals couldn't be done in XML because there would be
+                compromises in the layout and the manuals need to look pretty. Never mind that they
+                went to 42 languages and, by not using XML, added a 70% cost to every single manual
+                produced. PageMaker it is.</para>
+            <para dir="ltr">And no, they didn't want the accessory catalogues in XML either, for
+                similar reasons.</para>
         </section>
     
     
