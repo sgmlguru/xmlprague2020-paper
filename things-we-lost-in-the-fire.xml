@@ -360,8 +360,8 @@
                 simply because it came bundled with a 10 year-old XSLT2.0 processor. That seemed to
                 be the only option to use a <code>node-set()</code> extension function without
                 paying a license cost.</para>
-            <para dir="ltr">Effectively, I had to spend multiple hours to work around a license cost
-                equalling about one of those hours. </para>
+            <para dir="ltr">Effectively, in several projects over the years, I had to spend multiple
+                hours to work around a license cost equalling about one of those hours.</para>
         </section>
         <section>
             <title>Subscription Services</title>
@@ -450,7 +450,7 @@
                 fortune.</para>
             <para dir="ltr">Yet, it quickly became apparent that they chose XSDs because the data
                 described by them can be typed… just like before. In the end, I delivered a schema
-                that rather faithfully reproduced that old CBOL monster but with no additional
+                that rather faithfully reproduced that old COBOL monster but with no additional
                 value.</para>
             <para dir="ltr">This is not about a legacy system as much as it is about a legacy
                 mindset. I could have avoided the pain simply by asking <quote>what do you want to
