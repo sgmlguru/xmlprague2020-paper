@@ -54,7 +54,7 @@
     <section>
         <title>We Call Ourselves Grumpy Old Men</title>
         <para>Let us introduce ourselves. We're a pair of somewhat aged markup geeks with a combined
-            50 years between ourselves<footnote>
+            50 years of consulting experience between ourselves<footnote>
                 <para>A lot of which was spent bitching about what had already been.</para>
             </footnote>. This is not the paper that will reveal all. However, it is the paper that
             will discuss some of the implications of those 50 years.</para>
@@ -75,7 +75,7 @@
             <title>That Basic Venn Diagram</title>
             <mediaobject>
                 <imageobject>
-                    <imagedata fileref="img/Hidden-zone.jpg"/>
+                    <imagedata fileref="img/Hidden-zone.jpg" width="70%"/>
                 </imageobject>
             </mediaobject>
         </figure>
@@ -275,7 +275,7 @@
                 discuss the changes made so far and the reasons for making the change. That
                 communicative approach made a huge difference for the atmosphere and
                 cooperation.</para>
-            <para dir="ltr">It is all so obvious after the facts, but t taught me to have even more
+            <para dir="ltr">It is all so obvious after the facts, but it taught me to have even more
                 attention for the different sensitivities in a team.</para>
         </section>
     
