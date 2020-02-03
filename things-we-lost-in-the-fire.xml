@@ -49,7 +49,6 @@
                 and what we learned from them. Perhaps we can impart some degree of objectivity on a
                 novice in the field, or at least have him or her think again. If there is success -
                 flipping adversity into success - we’ll be more than happy to claim credit.</para>
-            <!--<para>While the stories are unlikely to be impartially presented, the names of the innocent (and not-so innocent) will be protected. We will instead focus on distilling the essence of each story and consider patterns and common denominators so we can learn from them. The listener will hopefully learn from our mistakes while nodding in recognition - we do not claim uniqueness; <?oxy_comment_start author="C-Moria" timestamp="20200202T195134+0100" comment="I like the fact that the extended abstract we sent in is used here to introduce the paper. I am however not certain about this final paragraph. The &quot;we hpe to entertain&quot; is a suggestion fro wahtw e had in mind for the presentation. Only one paragraph later we hint again to &quot;a few laughs&quot; Maybe that is a bit too much hinting to being funny"?>if all else fails, we hope to entertain.<?oxy_comment_end?></para>-->
         </abstract>
     </info>
     <section>
@@ -60,9 +59,6 @@
             </footnote>. This is not the paper that will reveal all. However, it is the paper that
             will discuss some of the implications of those 50 years.</para>
         <para>Or at least have a few laughs while reminiscing.</para>
-    
-        <!--<title><?oxy_comment_start author="C-Moria" timestamp="20200202T195401+0100" comment="I added a section to have a single Xinclude identifier. In its context, I think the content of this section can be pulled in the main section... would be one less title (and maybe a better flow
-"?>Memories<?oxy_comment_end?></title>-->
         <para>Bitching about our projects, we came to realise that many of our projects follow a
             pattern. This pattern can be illustrated through the diagram below.</para>
         <para>If we would reduce the number of stakeholders in a project to three, there seems
@@ -97,19 +93,8 @@
     
     <section>
         <title>The Things That Lit the Matches</title>
-        <!--<title><?oxy_comment_start author="C-Moria" timestamp="20200202T200151+0100" comment="I think I understand what you mean. I think we can drop the &quot;Religion&quot; level titles. Grouping could be implicit... I agree they could go
-
-What if we did this:
-Paper title: &quot;Things we lost in the fire&quot;
-section1 &quot;We call ourselves Grumpy Old Men&quot;
-here goes introduction
-section 2 &quot;Things that ignited the sparks&quot;
-here go all the stories with subsection titles
-section 3 &quot;Things we found in the ashes&quot;
-here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
         <section>
-            <title><?oxy_comment_start author="C-Moria" timestamp="20200202T200215+0100" comment="however keeping these divisions" flag="done"?>Programming<?oxy_comment_end?>
-                Languages as Religion</title>
+            <title>Programming Languages as Religion</title>
             <para dir="ltr">Being too religious about a programming language or a vocabulary does
                 not always help a project.</para>
             <para dir="ltr">Some years ago I held a workshop after the audit of an XML
@@ -134,9 +119,7 @@ here goes teh conclusion"?>Religion<?oxy_comment_end?></title>-->
                 developer protest.</para>
         </section>
         <section>
-            <title>The Strict
-                <?oxy_comment_start author="C-Moria" timestamp="20200202T201853+0100" comment="We don&apos;t put dates at most stories. This story would be enforced if you could tigh this to post 2015. A strict DTD would be less a really bad plan in 2000 then it was last year. Don&apos;t say it was 2019. Because people will relate this to your paper presented twice in this community... just to not make an obvious fool from Karnov
-"?>DTD<?oxy_comment_end?></title>
+            <title>The Strict DTD</title>
             <para dir="ltr">I wrote a set of DTDs and a bunch of transformation pipelines for a
                 client that was merging their content with another company’s (as in actually merging
                 two sets of documents with the same text but with differing tagging). Among the DTDs
